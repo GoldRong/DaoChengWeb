@@ -10,16 +10,25 @@
 	var nowjinrong;
 	var submenu;
 	var menuitem;
+	var leftmenu;
+	var leftmenuitem;
 	
 	$(document).ready(function(){
 		//初始化
 		init();
-		
+		//初始化头部的菜单
 		$(".jinrong_top_div_menu_li").mouseover(function(){
 				nowjinrong=$(this).index();
 				submenu.hide();
 				$(submenu[nowjinrong]).show();
 			});
+		
+		//left 菜单的切换
+		$(".jinrong_center_div_intside_left_li").click(function(){
+			var nowleftmenu=$(this).index();
+			var leftul=$(".jinrong_center_div_intside_left_ul_item");
+			$(leftul[nowleftmenu]).show();
+		});
 		
 		function init(){
 			submenu=$(".jinrong_top_div_menu_sub_p");
@@ -27,7 +36,18 @@
 			
 			menuitem=$(".jinrong_top_div_menu_li");
 			$(menuitem[1]).css("background-color","gray");
+			initLeftMenu();
+			
+			var leftul=$(".jinrong_center_div_intside_left_ul_item");
+			$(leftul[0]).show();
+			
 		}
+		//初始化左菜单
+		function initLeftMenu(){
+			leftmenu=$(".jinrong_center_div_intside_left_li");
+			leftmenuul=$(".jinrong_center_div_intside_left_ul_item");
+		}
+		
 	});
 </script>
 <title>道诚资产管理有限公司</title>

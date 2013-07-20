@@ -150,6 +150,7 @@ body {
 	height: 430px;
 	background-color: silver;
 }
+
 #jinrong_center_div_intside_left_ul{
 	margin: 0;
 	padding: 0;
@@ -162,6 +163,11 @@ body {
 	height: 30px;
 	background-color: red;
 }
+
+.jinrong_center_div_intside_left_li_div:HOVER{
+	cursor: pointer;
+}
+
 #jinrong_center_div_intside_left_span{
 	
 }
@@ -169,6 +175,9 @@ body {
 .jinrong_center_div_intside_left_a{
 	color: blue;
 	text-decoration: none;
+}
+.jinrong_center_div_intside_left_ul_item{
+	display: none;
 }
 .jinrong_center_div_intside_left_li_item{
 	list-style-type: none;
