@@ -1,7 +1,7 @@
 @CHARSET "UTF-8";
 
 body {
-	background: url("../images/bg.jpg") repeat;
+	background-color:white;
 	margin: 0;
 	margin-top: 20px;
 	font-family:'Microsoft YaHei',STHeiti,sans-serif;
