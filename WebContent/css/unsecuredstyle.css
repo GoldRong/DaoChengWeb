@@ -253,15 +253,76 @@ body {
 
 #unsecured_center_div_inside_right_div_content_p{
 	width: 800px;
-	height: 280px;
+	height: 200px;
 	background-color: transparent;
 	margin: 0;
 }
 #unsecured_center_div_inside_right_div_content_div{
 	width: 800px;
-	height: 240px;
-	background-color: yellow;
+	height: 320px;
+	background-color: transparent;
 	margin: 0;
+}
+
+#unsecured_center_div_inside_right_div_content_div_title{
+	width: 800px;
+	height: 60px;
+	background-color: transparent;
+	margin: 0;	
+}
+#unsecured_center_div_inside_right_div_content_div_title p{
+	margin:0;
+	color: #018be2;
+}
+#unsecured_center_div_inside_right_div_content_div_content{
+	width: 800px;
+	height: 260px;
+	background-color: transparent;
+	margin: 0;
+}
+
+.unsecured_center_div_inside_right_div_content_div_content_div{
+	width: 200px;
+	height: 260px;
+	float: left;
+	background-color: transparent;
+}
+
+.unsecured_center_div_inside_right_div_content_div_content_div_inside{
+	width: 200px;
+	height: 260px;
+	float: left;
+	background-color: transparent;
+}
+
+.unsecured_center_div_inside_right_div_content_div_content_div_inside_img{
+	width: 160px;
+	height: 140px;
+	margin:0 auto;
+	background-color: red;
+}
+.unsecured_center_div_inside_right_div_content_div_content_div_inside_img a{
+	
+}
+.unsecured_center_div_inside_right_div_content_div_content_div_inside_img img{
+	width: 160px;
+	height: 140px;
+}
+.unsecured_center_div_inside_right_div_content_div_content_div_inside p{
+	margin:0;
+	margin-left: 20px;
+	margin-top: 5px;
+	font-size: 14px;
+	font-weight: lighter;
+}
+.unsecured_center_div_inside_right_div_content_div_content_div_inside a{
+	margin-left: 20px;
+	color: #018be2;
+	font-size: 14px;
+	text-decoration: none;
+}
+.unsecured_center_div_inside_right_div_content_div_content_div_inside a:HOVER{
+	text-decoration: underline;
 }
 #unsecured_bottom_div_foot {
 	width: auto;
@@ -324,7 +385,7 @@ body {
 
 #unsecured_bottom_div_foot_context_platform a {
 	font-size: 14px;
-	color: blue;
+	color: #018be2;
 	font-weight: bold;
 	cursor: pointer;
 	text-decoration: none;
