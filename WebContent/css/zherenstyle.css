@@ -165,7 +165,7 @@ body {
 .zheren_center_div_inside_left_li_div{
 	width: auto;
 	height: 30px;
-	background-color: #fa9a9a;
+	background-color: silver;
 }
 
 .zheren_center_div_inside_left_li_div:HOVER{
@@ -220,7 +220,7 @@ body {
 	background-color: transparent;
 }
 #zheren_center_div_inside_right_div_title_h2{
-	width: 140px;
+	width: 200px;
 	height:80px;
 	float: left;
 	background-color: transparent;
@@ -253,15 +253,76 @@ body {
 
 #zheren_center_div_inside_right_div_content_p{
 	width: 800px;
-	height: 280px;
+	height: 200px;
 	background-color: transparent;
 	margin: 0;
 }
 #zheren_center_div_inside_right_div_content_div{
 	width: 800px;
-	height: 240px;
-	background-color: yellow;
+	height: 320px;
+	background-color: transparent;
 	margin: 0;
+}
+
+#zheren_center_div_inside_right_div_content_div_title{
+	width: 800px;
+	height: 60px;
+	background-color: transparent;
+	margin: 0;	
+}
+#zheren_center_div_inside_right_div_content_div_title p{
+	margin:0;
+	color: #018be2;
+}
+#zheren_center_div_inside_right_div_content_div_content{
+	width: 800px;
+	height: 260px;
+	background-color: transparent;
+	margin: 0;
+}
+
+.zheren_center_div_inside_right_div_content_div_content_div{
+	width: 200px;
+	height: 260px;
+	float: left;
+	background-color: transparent;
+}
+
+.zheren_center_div_inside_right_div_content_div_content_div_inside{
+	width: 200px;
+	height: 260px;
+	float: left;
+	background-color: transparent;
+}
+
+.zheren_center_div_inside_right_div_content_div_content_div_inside_img{
+	width: 160px;
+	height: 140px;
+	margin:0 auto;
+	background-color: red;
+}
+.zheren_center_div_inside_right_div_content_div_content_div_inside_img a{
+	
+}
+.zheren_center_div_inside_right_div_content_div_content_div_inside_img img{
+	width: 160px;
+	height: 140px;
+}
+.zheren_center_div_inside_right_div_content_div_content_div_inside p{
+	margin:0;
+	margin-left: 20px;
+	margin-top: 5px;
+	font-size: 14px;
+	font-weight: lighter;
+}
+.zheren_center_div_inside_right_div_content_div_content_div_inside a{
+	margin-left: 20px;
+	color: #018be2;
+	font-size: 14px;
+	text-decoration: none;
+}
+.zheren_center_div_inside_right_div_content_div_content_div_inside a:HOVER{
+	text-decoration: underline;
 }
 #zheren_bottom_div_foot {
 	width: auto;
@@ -324,7 +385,7 @@ body {
 
 #zheren_bottom_div_foot_context_platform a {
 	font-size: 14px;
-	color: blue;
+	color: #018be2;
 	font-weight: bold;
 	cursor: pointer;
 	text-decoration: none;
