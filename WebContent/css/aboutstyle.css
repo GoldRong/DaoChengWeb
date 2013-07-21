@@ -253,13 +253,14 @@ body {
 
 #about_center_div_inside_right_div_content_p{
 	width: 800px;
-	height: 280px;
+	height: 200px;
 	background-color: transparent;
 	margin: 0;
 }
+
 #about_center_div_inside_right_div_content_div{
 	width: 800px;
-	height: 240px;
+	height: 320px;
 	background-color: yellow;
 	margin: 0;
 }
