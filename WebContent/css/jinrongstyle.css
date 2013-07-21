@@ -27,7 +27,9 @@ body {
 #jinrong_top_head_logo {
 	float: left;
 }
-
+#jinrong_top_head_logo_a{
+	cursor: pointer;
+}
 #jinrong_top_head_a {
 	text-decoration: none;
 	color: #666666;
@@ -107,7 +109,8 @@ body {
 .jinrong_top_div_menu_sub_p a{
 	color: gray;
 	text-decoration: none;
-	font-size: 14px;
+	font-size: 12px;
+	font-weight: bold;
 }
 
 .jinrong_top_div_menu_sub_p a:HOVER{
@@ -131,18 +134,18 @@ body {
 	height: 130px;
 	background-color: transparent;
 }
-#jinrong_center_div_intside{
+#jinrong_center_div_inside{
 	width: 1100px;
 	height: 570px;
 	background-color: transparent;
 }
-#jinrong_center_div_intside_left{
-	width: 200px;
+#jinrong_center_div_inside_left{
+	width: 210px;
 	height: 570px;
-	background-color: #f9f9f9;
+	background-color: green;
 	float: left;
 }
-#jinrong_center_div_intside_left_menu{
+#jinrong_center_div_inside_left_menu{
 	position:relative;
 	top:20px;
 	margin:0 auto;
@@ -151,25 +154,25 @@ body {
 	background-color: yellow;
 }
 
-#jinrong_center_div_intside_left_ul{
+#jinrong_center_div_inside_left_ul{
 	margin: 0;
 	padding: 0;
 }
-.jinrong_center_div_intside_left_li{
+.jinrong_center_div_inside_left_li{
 	list-style-type: none;
 	margin-bottom: 2px;
 }
-.jinrong_center_div_intside_left_li_div{
+.jinrong_center_div_inside_left_li_div{
 	width: auto;
 	height: 30px;
 	background-color: #fa9a9a;
 }
 
-.jinrong_center_div_intside_left_li_div:HOVER{
+.jinrong_center_div_inside_left_li_div:HOVER{
 	cursor: pointer;
 }
 
-.jinrong_center_div_intside_left_a{
+.jinrong_center_div_inside_left_a{
 	position:relative;
 	color: white;
 	font-size:18px;
@@ -177,10 +180,10 @@ body {
 	text-decoration: none;
 	margin-left: 15px;
 }
-.jinrong_center_div_intside_left_ul_item{
+.jinrong_center_div_inside_left_ul_item{
 	display: none;
 }
-.jinrong_center_div_intside_left_li_item{
+.jinrong_center_div_inside_left_li_item{
 	list-style:none;
 	list-style-image: url("../images/ul_li_blue_dot.png");
 	margin: 0;
@@ -189,18 +192,32 @@ body {
 	padding-top: 3px;
 	padding-bottom: 3px;
 }
-.jinrong_center_div_intside_left_li_item_a{
+.jinrong_center_div_inside_left_li_item_a{
 	color: gray;
 	text-decoration: none;
 	margin: 0;
 	padding: 0;
 	font-size: 14px;
 }
-#jinrong_center_div_intside_right{
+#jinrong_center_div_inside_right{
 	float:left;
-	width: 900px;
+	width: 890px;
 	height: 570px;
-	background-color: silver;
+	background-color: pink;
+}
+#jinrong_center_div_inside_right_div{
+	position:relative;
+	left:50px;
+	top:10px;
+	width: 800px;
+	height: 550px;
+	background-color: yellow;
+}
+
+#jinrong_center_div_inside_right_div_title{
+	width: 800px;
+	height: 100px;
+	background-color: red;
 }
 #jinrong_bottom_div_foot {
 	width: auto;

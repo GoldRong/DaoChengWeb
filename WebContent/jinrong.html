@@ -24,9 +24,9 @@
 			});
 		
 		//left 菜单的切换
-		$(".jinrong_center_div_intside_left_li").click(function(){
+		$(".jinrong_center_div_inside_left_li").click(function(){
 			var nowleftmenu=$(this).index();
-			var leftul=$(".jinrong_center_div_intside_left_ul_item");
+			var leftul=$(".jinrong_center_div_inside_left_ul_item");
 			$(leftul[nowleftmenu]).slideToggle();
 		});
 		
@@ -38,14 +38,14 @@
 			$(menuitem[1]).css("background-color","gray");
 			initLeftMenu();
 			
-			var leftul=$(".jinrong_center_div_intside_left_ul_item");
+			var leftul=$(".jinrong_center_div_inside_left_ul_item");
 			$(leftul[0]).show();
 			
 		}
 		//初始化左菜单
 		function initLeftMenu(){
-			leftmenu=$(".jinrong_center_div_intside_left_li");
-			leftmenuul=$(".jinrong_center_div_intside_left_ul_item");
+			leftmenu=$(".jinrong_center_div_inside_left_li");
+			leftmenuul=$(".jinrong_center_div_inside_left_ul_item");
 		}
 		
 	});
@@ -63,7 +63,9 @@
 		<div id="jinrong_top_div">
 			<div id="jinrong_top_head">
 				<div id="jinrong_top_head_logo">
-					<img alt="道诚资产管理有限公司" src="images/logo_daocheng.png">
+					<a href="http://localhost:8080/DaoChengWeb" id="jinrong_top_head_logo_a">
+						<img alt="道诚资产管理有限公司" src="images/logo_daocheng.png">
+					</a>
 				</div>
 				<div id="jinrong_top_head_login">
 					<a href="http://exmail.qq.com/login" id="jinrong_top_head_a">信贷经理登录</a>
@@ -139,79 +141,84 @@
 				<img src="images/adtitle.PNG">
 			</div>
 			<!-- 内容 -->
-			<div id="jinrong_center_div_intside">
-				<div id="jinrong_center_div_intside_left">
-					<div id="jinrong_center_div_intside_left_menu">
-						<ul id="jinrong_center_div_intside_left_ul">
-							<li class="jinrong_center_div_intside_left_li">
-								<div class="jinrong_center_div_intside_left_li_div">
-								<a href="#"  class="jinrong_center_div_intside_left_a">道诚金融</a>
+			<div id="jinrong_center_div_inside">
+				<div id="jinrong_center_div_inside_left">
+					<div id="jinrong_center_div_inside_left_menu">
+						<ul id="jinrong_center_div_inside_left_ul">
+							<li class="jinrong_center_div_inside_left_li">
+								<div class="jinrong_center_div_inside_left_li_div">
+								<a href="#"  class="jinrong_center_div_inside_left_a">道诚金融</a>
 								</div>
-								<ul class="jinrong_center_div_intside_left_ul_item">
-									<li class="jinrong_center_div_intside_left_li_item"><a href="#" class="jinrong_center_div_intside_left_li_item_a">借款咨询服务</a>
+								<ul class="jinrong_center_div_inside_left_ul_item">
+									<li class="jinrong_center_div_inside_left_li_item"><a href="#" class="jinrong_center_div_inside_left_li_item_a">借款咨询服务</a>
 									</li>
-									<li class="jinrong_center_div_intside_left_li_item"><a href="#" class="jinrong_center_div_intside_left_li_item_a">道诚学贷</a>
+									<li class="jinrong_center_div_inside_left_li_item"><a href="#" class="jinrong_center_div_inside_left_li_item_a">道诚学贷</a>
 									</li>
-									<li class="jinrong_center_div_intside_left_li_item"><a href="#" class="jinrong_center_div_intside_left_li_item_a">道诚租赁</a>
+									<li class="jinrong_center_div_inside_left_li_item"><a href="#" class="jinrong_center_div_inside_left_li_item_a">道诚租赁</a>
 									</li>
 								</ul>
 							</li>
-							<li class="jinrong_center_div_intside_left_li">
-								<div class="jinrong_center_div_intside_left_li_div">
-								<a href="#"  class="jinrong_center_div_intside_left_a">财富管理</a>
+							<li class="jinrong_center_div_inside_left_li">
+								<div class="jinrong_center_div_inside_left_li_div">
+								<a href="#"  class="jinrong_center_div_inside_left_a">财富管理</a>
 								</div>
-								<ul class="jinrong_center_div_intside_left_ul_item">
-									<li class="jinrong_center_div_intside_left_li_item"><a href="#" class="jinrong_center_div_intside_left_li_item_a">借款咨询服务</a>
+								<ul class="jinrong_center_div_inside_left_ul_item">
+									<li class="jinrong_center_div_inside_left_li_item"><a href="#" class="jinrong_center_div_inside_left_li_item_a">借款咨询服务</a>
 									</li>
-									<li class="jinrong_center_div_intside_left_li_item"><a href="#" class="jinrong_center_div_intside_left_li_item_a">道诚学贷</a>
+									<li class="jinrong_center_div_inside_left_li_item"><a href="#" class="jinrong_center_div_inside_left_li_item_a">道诚学贷</a>
 									</li>
-									<li class="jinrong_center_div_intside_left_li_item"><a href="#" class="jinrong_center_div_intside_left_li_item_a">道诚租赁</a>
+									<li class="jinrong_center_div_inside_left_li_item"><a href="#" class="jinrong_center_div_inside_left_li_item_a">道诚租赁</a>
 									</li>
 								</ul>
 							</li>
-							<li class="jinrong_center_div_intside_left_li">
-								<div class="jinrong_center_div_intside_left_li_div">
-								<a href="#"  class="jinrong_center_div_intside_left_a">道诚动态</a>
+							<li class="jinrong_center_div_inside_left_li">
+								<div class="jinrong_center_div_inside_left_li_div">
+								<a href="#"  class="jinrong_center_div_inside_left_a">道诚动态</a>
 								</div>
-								<ul class="jinrong_center_div_intside_left_ul_item">
-									<li class="jinrong_center_div_intside_left_li_item"><a href="#" class="jinrong_center_div_intside_left_li_item_a">借款咨询服务</a>
+								<ul class="jinrong_center_div_inside_left_ul_item">
+									<li class="jinrong_center_div_inside_left_li_item"><a href="#" class="jinrong_center_div_inside_left_li_item_a">借款咨询服务</a>
 									</li>
-									<li class="jinrong_center_div_intside_left_li_item"><a href="#" class="jinrong_center_div_intside_left_li_item_a">道诚学贷</a>
+									<li class="jinrong_center_div_inside_left_li_item"><a href="#" class="jinrong_center_div_inside_left_li_item_a">道诚学贷</a>
 									</li>
-									<li class="jinrong_center_div_intside_left_li_item"><a href="#" class="jinrong_center_div_intside_left_li_item_a">道诚租赁</a>
+									<li class="jinrong_center_div_inside_left_li_item"><a href="#" class="jinrong_center_div_inside_left_li_item_a">道诚租赁</a>
 									</li>
 								</ul>
 							</li>
-							<li class="jinrong_center_div_intside_left_li">
-								<div class="jinrong_center_div_intside_left_li_div">
-								<a href="#"  class="jinrong_center_div_intside_left_a">社会责任</a>
+							<li class="jinrong_center_div_inside_left_li">
+								<div class="jinrong_center_div_inside_left_li_div">
+								<a href="#"  class="jinrong_center_div_inside_left_a">社会责任</a>
 								</div>
-								<ul class="jinrong_center_div_intside_left_ul_item">
-									<li class="jinrong_center_div_intside_left_li_item"><a href="#" class="jinrong_center_div_intside_left_li_item_a">借款咨询服务</a>
+								<ul class="jinrong_center_div_inside_left_ul_item">
+									<li class="jinrong_center_div_inside_left_li_item"><a href="#" class="jinrong_center_div_inside_left_li_item_a">借款咨询服务</a>
 									</li>
-									<li class="jinrong_center_div_intside_left_li_item"><a href="#" class="jinrong_center_div_intside_left_li_item_a">道诚学贷</a>
+									<li class="jinrong_center_div_inside_left_li_item"><a href="#" class="jinrong_center_div_inside_left_li_item_a">道诚学贷</a>
 									</li>
-									<li class="jinrong_center_div_intside_left_li_item"><a href="#" class="jinrong_center_div_intside_left_li_item_a">道诚租赁</a>
+									<li class="jinrong_center_div_inside_left_li_item"><a href="#" class="jinrong_center_div_inside_left_li_item_a">道诚租赁</a>
 									</li>
 								</ul>
 							</li>
-							<li class="jinrong_center_div_intside_left_li">
-								<div class="jinrong_center_div_intside_left_li_div">
-								<a href="#"  class="jinrong_center_div_intside_left_a">关于道诚</a>
+							<li class="jinrong_center_div_inside_left_li">
+								<div class="jinrong_center_div_inside_left_li_div">
+								<a href="#"  class="jinrong_center_div_inside_left_a">关于道诚</a>
 								</div>
-								<ul class="jinrong_center_div_intside_left_ul_item">
-									<li class="jinrong_center_div_intside_left_li_item"><a href="#" class="jinrong_center_div_intside_left_li_item_a">借款咨询服务</a>
+								<ul class="jinrong_center_div_inside_left_ul_item">
+									<li class="jinrong_center_div_inside_left_li_item"><a href="#" class="jinrong_center_div_inside_left_li_item_a">借款咨询服务</a>
 									</li>
-									<li class="jinrong_center_div_intside_left_li_item"><a href="#" class="jinrong_center_div_intside_left_li_item_a">道诚学贷</a>
+									<li class="jinrong_center_div_inside_left_li_item"><a href="#" class="jinrong_center_div_inside_left_li_item_a">道诚学贷</a>
 									</li>
-									<li class="jinrong_center_div_intside_left_li_item"><a href="#" class="jinrong_center_div_intside_left_li_item_a">道诚租赁</a>
+									<li class="jinrong_center_div_inside_left_li_item"><a href="#" class="jinrong_center_div_inside_left_li_item_a">道诚租赁</a>
 									</li>
 								</ul>
 							</li>
 						</ul>
 					</div>
 				</div>
-				<div id="jinrong_center_div_intside_right">
+				<div id="jinrong_center_div_inside_right">
+					<div id="jinrong_center_div_inside_right_div">
+							<div>
+								<div id="jinrong_center_div_inside_right_div_title"></div>
+							</div>
+					</div>
 				</div>
 			</div>
 			</div>
