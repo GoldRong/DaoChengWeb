@@ -1,0 +1,309 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<script type="text/javascript" src="scripts/jquery-1.10.1.js"></script>
+<link rel="stylesheet" type="text/css" href="css/unsecured_businessflowstyle.css">
+<link rel="shortcut icon" href="images/logo_mini.ico" />
+
+<script type="text/javascript">
+	var nowunsecured_businessflow;
+	var submenu;
+	var menuitem;
+	var leftmenu;
+	var leftmenuitem;
+	
+	$(document).ready(function(){
+		//初始化
+		init();
+		//初始化头部的菜单
+		$(".unsecured_businessflow_top_div_menu_li").mouseover(function(){
+				nowunsecured_businessflow=$(this).index();
+				submenu.hide();
+				$(submenu[nowunsecured_businessflow]).show();
+			});
+		
+		//left 菜单的切换
+		$(".unsecured_businessflow_center_div_inside_left_li").click(function(){
+			var nowleftmenu=$(this).index();
+			var leftul=$(".unsecured_businessflow_center_div_inside_left_ul_item");
+			$(leftul[nowleftmenu]).slideToggle();
+		});
+		
+		function init(){
+			submenu=$(".unsecured_businessflow_top_div_menu_sub_p");
+			$(submenu[1]).show();
+			
+			menuitem=$(".unsecured_businessflow_top_div_menu_li");
+			$(menuitem[1]).css("background-color","gray");
+			initLeftMenu();
+			
+			var leftul=$(".unsecured_businessflow_center_div_inside_left_ul_item");
+			$(leftul[0]).show();
+			
+		}
+		//初始化左菜单
+		function initLeftMenu(){
+			leftmenu=$(".unsecured_businessflow_center_div_inside_left_li");
+			leftmenuul=$(".unsecured_businessflow_center_div_inside_left_ul_item");
+		}
+		
+	});
+</script>
+<title>道诚资产管理有限公司</title>
+</head>
+<body>
+
+<!-- JiaThis Button BEGIN -->
+<script type="text/javascript" src="http://v3.jiathis.com/code/jiathis_r.js?uid=1372492823731576&btn=r1.gif" charset="utf-8"></script>
+<!-- JiaThis Button END -->
+
+	<div id="unsecured_businessflow_super_div">
+<!--head  -->
+		<div id="unsecured_businessflow_top_div">
+			<div id="unsecured_businessflow_top_head">
+				<div id="unsecured_businessflow_top_head_logo">
+					<img alt="道诚资产管理有限公司" src="images/logo_daocheng.png">
+				</div>
+				<div id="unsecured_businessflow_top_head_login">
+					<a href="http://exmail.qq.com/login" id="unsecured_businessflow_top_head_a">信贷经理登录</a>
+				</div>
+			</div>
+			<div id=unsecured_businessflow_top_div_menu>
+				<!-- 菜单选项 -->
+				<ul id="unsecured_businessflow_top_div_menu_ul">
+					<li class="unsecured_businessflow_top_div_menu_li"><a href="http://localhost:8080/DaoChengWeb/index.html" class="unsecured_businessflow_top_div_menu_li_a">首页</a></li>
+					<li class="unsecured_businessflow_top_div_menu_li"><a href="http://localhost:8080/DaoChengWeb/unsecured_businessflow.html" class="unsecured_businessflow_top_div_menu_li_a">无抵押信用贷款</a></li>
+					<li class="unsecured_businessflow_top_div_menu_li"><a href="http://localhost:8080/DaoChengWeb/mortgage.html" class="unsecured_businessflow_top_div_menu_li_a">抵押贷款</a></li>
+					<li class="unsecured_businessflow_top_div_menu_li"><a href="http://localhost:8080/DaoChengWeb/activity.html" class="unsecured_businessflow_top_div_menu_li_a">道诚动态</a></li>
+					<li class="unsecured_businessflow_top_div_menu_li"><a href="http://localhost:8080/DaoChengWeb/zheren.html" class="unsecured_businessflow_top_div_menu_li_a">社会责任</a></li>
+					<li class="unsecured_businessflow_top_div_menu_li"><a href="http://localhost:8080/DaoChengWeb/about.html" class="unsecured_businessflow_top_div_menu_li_a">关于道诚</a></li>
+				</ul>
+
+			</div>
+		</div>
+		<!-- 子选项 -->
+		<div id="unsecured_businessflow_top_div_submenu">
+				
+				<div id="unsecured_businessflow_top_div_menu_sub">
+						<p class="unsecured_businessflow_top_div_menu_sub_p">
+						</p>
+						<p class="unsecured_businessflow_top_div_menu_sub_p">
+							<span style="margin-left: 181px"></span>
+							<a href="#">个人小额便民贷款</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+							<a href="#">商汇通卡</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+							<a href="#">企业流动资金贷款</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+							<a href="#">企业贷款（联保）</a>&nbsp;&nbsp;
+						</p>
+						
+						<p class="unsecured_businessflow_top_div_menu_sub_p">
+							<span style="margin-left: 364px"></span>
+							<a href="#">个人房产抵押贷款</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+							<a href="#">个人房产汽车贷款</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+							<a href="#">贷款主体</a>&nbsp;&nbsp;
+						</p>
+						
+						<p class="unsecured_businessflow_top_div_menu_sub_p">
+							<span style="margin-left: 546px"></span>
+							<a href="#">最新动态</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+							<a href="#">媒体报道</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+							<a href="#">专题报道</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+							<a href="#">行业动态</a>
+						</p>
+
+						<p class="unsecured_businessflow_top_div_menu_sub_p">
+							<span style="margin-left: 455px"></span>
+							<a href="#">社会责任理念</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+							<a href="#">社会责任项目</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+							<a href="#">道诚自愿者</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+							<a href="#">贷款服务咨询</a>
+						</p>
+						
+						<p class="unsecured_businessflow_top_div_menu_sub_p">
+							<span style="margin-left: 680px"></span>
+							<a href="#">道诚介绍</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+							<a href="#">合作伙伴</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+							<a href="#">客户评价</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+							<a href="#">公司荣誉</a>					
+						</p>
+				</div>
+		</div>
+<!-- center -->
+		<div id="unsecured_businessflow_center_div">
+			<div id="unsecured_businessflow_center_div_outside">
+			<!-- adtitle -->
+			<div id="unsecured_businessflow_center_div_top">
+				<img src="images/adtitle.PNG">
+			</div>
+			<!-- 内容 -->
+			<div id="unsecured_businessflow_center_div_inside">
+				<div id="unsecured_businessflow_center_div_inside_left">
+					<div id="unsecured_businessflow_center_div_inside_left_menu">
+						<ul id="unsecured_businessflow_center_div_inside_left_ul">
+							<li class="unsecured_businessflow_center_div_inside_left_li">
+								<div class="unsecured_businessflow_center_div_inside_left_li_div">
+								<a href="#"  class="unsecured_businessflow_center_div_inside_left_a">无抵押信用贷款</a>
+								</div>
+								<ul class="unsecured_businessflow_center_div_inside_left_ul_item">
+									<li class="unsecured_businessflow_center_div_inside_left_li_item"><a href="#" class="unsecured_businessflow_center_div_inside_left_li_item_a">个人小额便民贷款</a>
+									</li>
+									<li class="unsecured_businessflow_center_div_inside_left_li_item"><a href="#" class="unsecured_businessflow_center_div_inside_left_li_item_a">商汇通卡</a>
+									</li>
+									<li class="unsecured_businessflow_center_div_inside_left_li_item"><a href="#" class="unsecured_businessflow_center_div_inside_left_li_item_a">企业流动资金贷款</a>
+									</li>
+									<li class="unsecured_businessflow_center_div_inside_left_li_item"><a href="#" class="unsecured_businessflow_center_div_inside_left_li_item_a">企业贷款（联保）</a>
+									</li>
+								</ul>
+							</li>
+							<li class="unsecured_businessflow_center_div_inside_left_li">
+								<div class="unsecured_businessflow_center_div_inside_left_li_div">
+								<a href="#"  class="unsecured_businessflow_center_div_inside_left_a">抵押贷款</a>
+								</div>
+								<ul class="unsecured_businessflow_center_div_inside_left_ul_item">
+									<li class="unsecured_businessflow_center_div_inside_left_li_item"><a href="#" class="unsecured_businessflow_center_div_inside_left_li_item_a">个人房产抵押贷款</a>
+									</li>
+									<li class="unsecured_businessflow_center_div_inside_left_li_item"><a href="#" class="unsecured_businessflow_center_div_inside_left_li_item_a">个人房产汽车贷款</a>
+									</li>
+									<li class="unsecured_businessflow_center_div_inside_left_li_item"><a href="#" class="unsecured_businessflow_center_div_inside_left_li_item_a">贷款主体</a>
+									</li>
+								</ul>
+							</li>
+							<li class="unsecured_businessflow_center_div_inside_left_li">
+								<div class="unsecured_businessflow_center_div_inside_left_li_div">
+								<a href="#"  class="unsecured_businessflow_center_div_inside_left_a">道诚动态</a>
+								</div>
+								<ul class="unsecured_businessflow_center_div_inside_left_ul_item">
+									<li class="unsecured_businessflow_center_div_inside_left_li_item"><a href="#" class="unsecured_businessflow_center_div_inside_left_li_item_a">借款咨询服务</a>
+									</li>
+									<li class="unsecured_businessflow_center_div_inside_left_li_item"><a href="#" class="unsecured_businessflow_center_div_inside_left_li_item_a">道诚学贷</a>
+									</li>
+									<li class="unsecured_businessflow_center_div_inside_left_li_item"><a href="#" class="unsecured_businessflow_center_div_inside_left_li_item_a">道诚租赁</a>
+									</li>
+								</ul>
+							</li>
+							<li class="unsecured_businessflow_center_div_inside_left_li">
+								<div class="unsecured_businessflow_center_div_inside_left_li_div">
+								<a href="#"  class="unsecured_businessflow_center_div_inside_left_a">社会责任</a>
+								</div>
+								<ul class="unsecured_businessflow_center_div_inside_left_ul_item">
+									<li class="unsecured_businessflow_center_div_inside_left_li_item"><a href="#" class="unsecured_businessflow_center_div_inside_left_li_item_a">借款咨询服务</a>
+									</li>
+									<li class="unsecured_businessflow_center_div_inside_left_li_item"><a href="#" class="unsecured_businessflow_center_div_inside_left_li_item_a">道诚学贷</a>
+									</li>
+									<li class="unsecured_businessflow_center_div_inside_left_li_item"><a href="#" class="unsecured_businessflow_center_div_inside_left_li_item_a">道诚租赁</a>
+									</li>
+								</ul>
+							</li>
+							<li class="unsecured_businessflow_center_div_inside_left_li">
+								<div class="unsecured_businessflow_center_div_inside_left_li_div">
+								<a href="#"  class="unsecured_businessflow_center_div_inside_left_a">关于道诚</a>
+								</div>
+								<ul class="unsecured_businessflow_center_div_inside_left_ul_item">
+									<li class="unsecured_businessflow_center_div_inside_left_li_item"><a href="#" class="unsecured_businessflow_center_div_inside_left_li_item_a">借款咨询服务</a>
+									</li>
+									<li class="unsecured_businessflow_center_div_inside_left_li_item"><a href="#" class="unsecured_businessflow_center_div_inside_left_li_item_a">道诚学贷</a>
+									</li>
+									<li class="unsecured_businessflow_center_div_inside_left_li_item"><a href="#" class="unsecured_businessflow_center_div_inside_left_li_item_a">道诚租赁</a>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div id="unsecured_businessflow_center_div_inside_right">
+					<div id="unsecured_businessflow_center_div_inside_right_div">
+							<div id="unsecured_businessflow_center_div_inside_right_div_title">
+									<div id="unsecured_businessflow_center_div_inside_right_div_title_h2">
+										<h2>企业流动资金贷款</h2>
+									</div>
+									<div id="unsecured_businessflow_center_div_inside_right_div_title_h5">
+										<h5>Inclusive Finance</h5>
+									</div>
+							</div>
+							<div id="unsecured_businessflow_center_div_inside_right_div_content">
+								<p id="unsecured_businessflow_center_div_inside_right_div_content_p">
+								企业流动资金贷款100万-1000万：<br><br>
+									条    件：大成都范围内实体公司（经营1年以上）或个体工商户，公司或法定代表人以及股东在大成都范围内有房产（按揭、合同、产权均可），实际经营场所，良好的经营状况，根据实际经营情况提供2位保证人（保证人可以是自然人或者公司，保证人在大成都范围内有资产且资产大于贷款金额）；<br>
+									放款方式：票或现金；<br>
+									放款时间：资料齐全且条件符合者一周内即可放款；<br>
+									贷款周期：最短3个月，首次贷款不超过一年，可续贷；<br>
+									综合成本（总费用）：17-19%；<br>
+								</p>
+								<div id="unsecured_businessflow_center_div_inside_right_div_content_div">
+									<div id="unsecured_businessflow_center_div_inside_right_div_content_div_title">
+										<p>道诚公司为个人和企业提供全方位多渠道的服务，包括：</p>
+									</div>
+									<div id="unsecured_businessflow_center_div_inside_right_div_content_div_content">
+										<div class="unsecured_businessflow_center_div_inside_right_div_content_div_content_div">
+											<div class="unsecured_businessflow_center_div_inside_right_div_content_div_content_div_inside">
+													<div class="unsecured_businessflow_center_div_inside_right_div_content_div_content_div_inside_img">
+														<img src="images/typeimage.jpg">
+													</div>
+													<p>个人小额便民贷款</p>
+													<a href="#">更多详情 >></a>
+											</div>
+										</div>
+										<div class="unsecured_businessflow_center_div_inside_right_div_content_div_content_div">
+											<div class="unsecured_businessflow_center_div_inside_right_div_content_div_content_div_inside">
+													<div class="unsecured_businessflow_center_div_inside_right_div_content_div_content_div_inside_img">
+														<img src="images/typeimage.jpg">
+													</div>
+													<p>商汇通卡</p>
+													<a href="#">更多详情 >></a>
+											</div>
+										</div>
+										<div class="unsecured_businessflow_center_div_inside_right_div_content_div_content_div">
+											<div class="unsecured_businessflow_center_div_inside_right_div_content_div_content_div_inside">
+													<div class="unsecured_businessflow_center_div_inside_right_div_content_div_content_div_inside_img">
+														<img src="images/typeimage.jpg">
+													</div>
+													<p>企业流动资金贷款</p>
+													<a href="#">更多详情 >></a>
+											</div>
+										</div>
+										<div class="unsecured_businessflow_center_div_inside_right_div_content_div_content_div">
+											<div class="unsecured_businessflow_center_div_inside_right_div_content_div_content_div_inside">
+													<div class="unsecured_businessflow_center_div_inside_right_div_content_div_content_div_inside_img">
+														<img src="images/typeimage.jpg">
+													</div>
+													<p>企业贷款（联保）</p>
+													<a href="#">更多详情 >></a>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+					</div>
+				</div>
+			</div>
+			</div>
+		</div>
+<!-- bottom -->
+
+<!-- footer -->
+		<div id="unsecured_businessflow_bottom_div_foot">
+			<div id="unsecured_businessflow_bottom_div_foot_context">
+				<div id="unsecured_businessflow_bottom_div_foot_context_link">
+					<div>
+					<a href="#">关于道诚</a><span>|</span>
+					<a href="#">联系我们</a><span>|</span>
+					<a href="#">信贷经理入驻</a><span >|</span>
+					<a href="#">加入我们</a><span>|</span>
+					<a href="#">市场合作</a><span>|</span>
+					<a href="#">建议与投诉</a>
+					</div>
+				</div>
+				<div id="unsecured_businessflow_bottom_div_foot_context_copyright">
+					<span>Copyright &copy; 2013 daochengamc.com Inc. All Rights Reserved. </span>
+				</div>
+				<div id="unsecured_businessflow_bottom_div_foot_context_platform">
+					<span><a href="#">成都道诚资产管理有限公司</a>&nbsp;版权所有</span>
+				</div>
+				<div id="unsecured_businessflow_bottom_div_foot_context_number">
+					<span><a>京ICP备12000680号-1</a>&nbsp;&nbsp;京公网安备110108008323号</span>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
