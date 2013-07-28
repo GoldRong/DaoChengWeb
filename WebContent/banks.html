@@ -7,7 +7,7 @@
 <link rel="shortcut icon" href="images/logo_mini.ico" />
 
 <script type="text/javascript">
-	var nowactivity;
+	var nowbanks;
 	var submenu;
 	var menuitem;
 	var leftmenu;
@@ -17,35 +17,35 @@
 		//初始化
 		init();
 		//初始化头部的菜单
-		$(".activity_top_div_menu_li").mouseover(function(){
-				nowactivity=$(this).index();
+		$(".banks_top_div_menu_li").mouseover(function(){
+				nowbanks=$(this).index();
 				submenu.hide();
-				$(submenu[nowactivity]).show();
+				$(submenu[nowbanks]).show();
 			});
 		
 		//left 菜单的切换
-		$(".activity_center_div_inside_left_li").click(function(){
+		$(".banks_center_div_inside_left_li").click(function(){
 			var nowleftmenu=$(this).index();
-			var leftul=$(".activity_center_div_inside_left_ul_item");
+			var leftul=$(".banks_center_div_inside_left_ul_item");
 			$(leftul[nowleftmenu]).slideToggle();
 		});
 		
 		function init(){
-			submenu=$(".activity_top_div_menu_sub_p");
+			submenu=$(".banks_top_div_menu_sub_p");
 			$(submenu[3]).show();
 			
-			menuitem=$(".activity_top_div_menu_li");
+			menuitem=$(".banks_top_div_menu_li");
 			$(menuitem[3]).css("background-color","gray");
 			initLeftMenu();
 			
-			var leftul=$(".activity_center_div_inside_left_ul_item");
+			var leftul=$(".banks_center_div_inside_left_ul_item");
 			$(leftul[2]).show();
 			
 		}
 		//初始化左菜单
 		function initLeftMenu(){
-			leftmenu=$(".activity_center_div_inside_left_li");
-			leftmenuul=$(".activity_center_div_inside_left_ul_item");
+			leftmenu=$(".banks_center_div_inside_left_li");
+			leftmenuul=$(".banks_center_div_inside_left_ul_item");
 		}
 		
 	});
@@ -58,37 +58,37 @@
 <script type="text/javascript" src="http://v3.jiathis.com/code/jiathis_r.js?uid=1372492823731576&btn=r1.gif" charset="utf-8"></script>
 <!-- JiaThis Button END -->
 
-	<div id="activity_super_div">
+	<div id="banks_super_div">
 <!--head  -->
-		<div id="activity_top_div">
-			<div id="activity_top_head">
-				<div id="activity_top_head_logo">
+		<div id="banks_top_div">
+			<div id="banks_top_head">
+				<div id="banks_top_head_logo">
 					<img alt="道诚资产管理有限公司" src="images/logo_daocheng.png">
 				</div>
-				<div id="activity_top_head_login">
-					<a href="http://exmail.qq.com/login" id="activity_top_head_a">信贷经理登录</a>
+				<div id="banks_top_head_login">
+					<a href="http://exmail.qq.com/login" id="banks_top_head_a">信贷经理登录</a>
 				</div>
 			</div>
-			<div id=activity_top_div_menu>
+			<div id=banks_top_div_menu>
 				<!-- 菜单选项 -->
-				<ul id="activity_top_div_menu_ul">
-					<li class="activity_top_div_menu_li"><a href="http://localhost:8080/DaoChengWeb/index.html" class="activity_top_div_menu_li_a">首页</a></li>
-					<li class="activity_top_div_menu_li"><a href="http://localhost:8080/DaoChengWeb/unsecured.html" class="activity_top_div_menu_li_a">无抵押信用贷款</a></li>
-					<li class="activity_top_div_menu_li"><a href="http://localhost:8080/DaoChengWeb/mortgage.html" class="activity_top_div_menu_li_a">抵押贷款</a></li>
-					<li class="activity_top_div_menu_li"><a href="http://localhost:8080/DaoChengWeb/activity.html" class="activity_top_div_menu_li_a">合作银行</a></li>
-					<li class="activity_top_div_menu_li"><a href="http://localhost:8080/DaoChengWeb/zheren.html" class="activity_top_div_menu_li_a">社会责任</a></li>
-					<li class="activity_top_div_menu_li"><a href="http://localhost:8080/DaoChengWeb/about.html" class="activity_top_div_menu_li_a">关于道诚</a></li>
+				<ul id="banks_top_div_menu_ul">
+					<li class="banks_top_div_menu_li"><a href="http://localhost:8080/DaoChengWeb/index.html" class="banks_top_div_menu_li_a">首页</a></li>
+					<li class="banks_top_div_menu_li"><a href="http://localhost:8080/DaoChengWeb/unsecured.html" class="banks_top_div_menu_li_a">无抵押信用贷款</a></li>
+					<li class="banks_top_div_menu_li"><a href="http://localhost:8080/DaoChengWeb/mortgage.html" class="banks_top_div_menu_li_a">抵押贷款</a></li>
+					<li class="banks_top_div_menu_li"><a href="http://localhost:8080/DaoChengWeb/banks.html" class="banks_top_div_menu_li_a">合作银行</a></li>
+					<li class="banks_top_div_menu_li"><a href="http://localhost:8080/DaoChengWeb/zheren.html" class="banks_top_div_menu_li_a">社会责任</a></li>
+					<li class="banks_top_div_menu_li"><a href="http://localhost:8080/DaoChengWeb/about.html" class="banks_top_div_menu_li_a">关于道诚</a></li>
 				</ul>
 
 			</div>
 		</div>
 		<!-- 子选项 -->
-		<div id="activity_top_div_submenu">
+		<div id="banks_top_div_submenu">
 				
-				<div id="activity_top_div_menu_sub">
-						<p class="activity_top_div_menu_sub_p">
+				<div id="banks_top_div_menu_sub">
+						<p class="banks_top_div_menu_sub_p">
 						</p>
-						<p class="activity_top_div_menu_sub_p">
+						<p class="banks_top_div_menu_sub_p">
 							<span style="margin-left: 181px"></span>
 							<a href="#">个人小额便民贷款</a>&nbsp;&nbsp;|&nbsp;&nbsp;
 							<a href="#">商汇通卡</a>&nbsp;&nbsp;|&nbsp;&nbsp;
@@ -96,14 +96,14 @@
 							<a href="#">企业贷款（联保）</a>&nbsp;&nbsp;
 						</p>
 						
-						<p class="activity_top_div_menu_sub_p">
+						<p class="banks_top_div_menu_sub_p">
 							<span style="margin-left: 364px"></span>
 							<a href="#">个人房产抵押贷款</a>&nbsp;&nbsp;|&nbsp;&nbsp;
 							<a href="#">个人房产汽车贷款</a>&nbsp;&nbsp;|&nbsp;&nbsp;
 							<a href="#">贷款主体</a>&nbsp;&nbsp;
 						</p>
 						
-						<p class="activity_top_div_menu_sub_p">
+						<p class="banks_top_div_menu_sub_p">
 							<span style="margin-left: 546px"></span>
 							<a href="#">最新动态</a>&nbsp;&nbsp;|&nbsp;&nbsp;
 							<a href="#">媒体报道</a>&nbsp;&nbsp;|&nbsp;&nbsp;
@@ -111,7 +111,7 @@
 							<a href="#">行业动态</a>
 						</p>
 
-						<p class="activity_top_div_menu_sub_p">
+						<p class="banks_top_div_menu_sub_p">
 							<span style="margin-left: 455px"></span>
 							<a href="#">社会责任理念</a>&nbsp;&nbsp;|&nbsp;&nbsp;
 							<a href="#">社会责任项目</a>&nbsp;&nbsp;|&nbsp;&nbsp;
@@ -119,7 +119,7 @@
 							<a href="#">贷款服务咨询</a>
 						</p>
 						
-						<p class="activity_top_div_menu_sub_p">
+						<p class="banks_top_div_menu_sub_p">
 							<span style="margin-left: 680px"></span>
 							<a href="#">道诚介绍</a>&nbsp;&nbsp;|&nbsp;&nbsp;
 							<a href="#">合作伙伴</a>&nbsp;&nbsp;|&nbsp;&nbsp;
@@ -129,141 +129,104 @@
 				</div>
 		</div>
 <!-- center -->
-		<div id="activity_center_div">
-			<div id="activity_center_div_outside">
+		<div id="banks_center_div">
+			<div id="banks_center_div_outside">
 			<!-- adtitle -->
-			<div id="activity_center_div_top">
+			<div id="banks_center_div_top">
 				<img src="images/adtitle.PNG">
 			</div>
 			<!-- 内容 -->
-			<div id="activity_center_div_inside">
-				<div id="activity_center_div_inside_left">
-					<div id="activity_center_div_inside_left_menu">
-						<ul id="activity_center_div_inside_left_ul">
-							<li class="activity_center_div_inside_left_li">
-								<div class="activity_center_div_inside_left_li_div">
-								<a href="#"  class="activity_center_div_inside_left_a">无抵押信用贷款</a>
+			<div id="banks_center_div_inside">
+				<div id="banks_center_div_inside_left">
+					<div id="banks_center_div_inside_left_menu">
+						<ul id="banks_center_div_inside_left_ul">
+							<li class="banks_center_div_inside_left_li">
+								<div class="banks_center_div_inside_left_li_div">
+								<a href="#"  class="banks_center_div_inside_left_a">无抵押信用贷款</a>
 								</div>
-								<ul class="activity_center_div_inside_left_ul_item">
-									<li class="activity_center_div_inside_left_li_item"><a href="#" class="activity_center_div_inside_left_li_item_a">个人小额便民贷款</a>
+								<ul class="banks_center_div_inside_left_ul_item">
+									<li class="banks_center_div_inside_left_li_item"><a href="#" class="banks_center_div_inside_left_li_item_a">个人小额便民贷款</a>
 									</li>
-									<li class="activity_center_div_inside_left_li_item"><a href="#" class="activity_center_div_inside_left_li_item_a">商汇通卡</a>
+									<li class="banks_center_div_inside_left_li_item"><a href="#" class="banks_center_div_inside_left_li_item_a">商汇通卡</a>
 									</li>
-									<li class="activity_center_div_inside_left_li_item"><a href="#" class="activity_center_div_inside_left_li_item_a">企业流动资金贷款</a>
+									<li class="banks_center_div_inside_left_li_item"><a href="#" class="banks_center_div_inside_left_li_item_a">企业流动资金贷款</a>
 									</li>
-									<li class="activity_center_div_inside_left_li_item"><a href="#" class="activity_center_div_inside_left_li_item_a">企业贷款（联保）</a>
+									<li class="banks_center_div_inside_left_li_item"><a href="#" class="banks_center_div_inside_left_li_item_a">企业贷款（联保）</a>
 									</li>
 								</ul>
 							</li>
-							<li class="activity_center_div_inside_left_li">
-								<div class="activity_center_div_inside_left_li_div">
-								<a href="#"  class="activity_center_div_inside_left_a">抵押贷款</a>
+							<li class="banks_center_div_inside_left_li">
+								<div class="banks_center_div_inside_left_li_div">
+								<a href="#"  class="banks_center_div_inside_left_a">抵押贷款</a>
 								</div>
-								<ul class="activity_center_div_inside_left_ul_item">
-									<li class="activity_center_div_inside_left_li_item"><a href="#" class="activity_center_div_inside_left_li_item_a">个人房产抵押贷款</a>
+								<ul class="banks_center_div_inside_left_ul_item">
+									<li class="banks_center_div_inside_left_li_item"><a href="#" class="banks_center_div_inside_left_li_item_a">个人房产抵押贷款</a>
 									</li>
-									<li class="activity_center_div_inside_left_li_item"><a href="#" class="activity_center_div_inside_left_li_item_a">个人房产汽车贷款</a>
+									<li class="banks_center_div_inside_left_li_item"><a href="#" class="banks_center_div_inside_left_li_item_a">个人房产汽车贷款</a>
 									</li>
-									<li class="activity_center_div_inside_left_li_item"><a href="#" class="activity_center_div_inside_left_li_item_a">贷款主体</a>
+									<li class="banks_center_div_inside_left_li_item"><a href="#" class="banks_center_div_inside_left_li_item_a">贷款主体</a>
 									</li>
 								</ul>
 							</li>
-							<li class="activity_center_div_inside_left_li">
-								<div class="activity_center_div_inside_left_li_div">
-								<a href="#"  class="activity_center_div_inside_left_a">合作伙伴</a>
+							<li class="banks_center_div_inside_left_li">
+								<div class="banks_center_div_inside_left_li_div">
+								<a href="#"  class="banks_center_div_inside_left_a">合作伙伴</a>
 								</div>
-								<ul class="activity_center_div_inside_left_ul_item">
-									<li class="activity_center_div_inside_left_li_item"><a href="#" class="activity_center_div_inside_left_li_item_a">合作银行</a>
+								<ul class="banks_center_div_inside_left_ul_item">
+									<li class="banks_center_div_inside_left_li_item"><a href="#" class="banks_center_div_inside_left_li_item_a">合作银行</a>
 									</li>
 								</ul>
 							</li>
-							<li class="activity_center_div_inside_left_li">
-								<div class="activity_center_div_inside_left_li_div">
-								<a href="#"  class="activity_center_div_inside_left_a">社会责任</a>
+							<li class="banks_center_div_inside_left_li">
+								<div class="banks_center_div_inside_left_li_div">
+								<a href="#"  class="banks_center_div_inside_left_a">社会责任</a>
 								</div>
-								<ul class="activity_center_div_inside_left_ul_item">
-									<li class="activity_center_div_inside_left_li_item"><a href="#" class="activity_center_div_inside_left_li_item_a">借款咨询服务</a>
+								<ul class="banks_center_div_inside_left_ul_item">
+									<li class="banks_center_div_inside_left_li_item"><a href="#" class="banks_center_div_inside_left_li_item_a">借款咨询服务</a>
 									</li>
-									<li class="activity_center_div_inside_left_li_item"><a href="#" class="activity_center_div_inside_left_li_item_a">道诚学贷</a>
+									<li class="banks_center_div_inside_left_li_item"><a href="#" class="banks_center_div_inside_left_li_item_a">道诚学贷</a>
 									</li>
-									<li class="activity_center_div_inside_left_li_item"><a href="#" class="activity_center_div_inside_left_li_item_a">道诚租赁</a>
+									<li class="banks_center_div_inside_left_li_item"><a href="#" class="banks_center_div_inside_left_li_item_a">道诚租赁</a>
 									</li>
 								</ul>
 							</li>
-							<li class="activity_center_div_inside_left_li">
-								<div class="activity_center_div_inside_left_li_div">
-								<a href="#"  class="activity_center_div_inside_left_a">关于道诚</a>
+							<li class="banks_center_div_inside_left_li">
+								<div class="banks_center_div_inside_left_li_div">
+								<a href="#"  class="banks_center_div_inside_left_a">关于道诚</a>
 								</div>
-								<ul class="activity_center_div_inside_left_ul_item">
-									<li class="activity_center_div_inside_left_li_item"><a href="#" class="activity_center_div_inside_left_li_item_a">借款咨询服务</a>
+								<ul class="banks_center_div_inside_left_ul_item">
+									<li class="banks_center_div_inside_left_li_item"><a href="#" class="banks_center_div_inside_left_li_item_a">借款咨询服务</a>
 									</li>
-									<li class="activity_center_div_inside_left_li_item"><a href="#" class="activity_center_div_inside_left_li_item_a">道诚学贷</a>
+									<li class="banks_center_div_inside_left_li_item"><a href="#" class="banks_center_div_inside_left_li_item_a">道诚学贷</a>
 									</li>
-									<li class="activity_center_div_inside_left_li_item"><a href="#" class="activity_center_div_inside_left_li_item_a">道诚租赁</a>
+									<li class="banks_center_div_inside_left_li_item"><a href="#" class="banks_center_div_inside_left_li_item_a">道诚租赁</a>
 									</li>
 								</ul>
 							</li>
 						</ul>
 					</div>
 				</div>
-				<div id="activity_center_div_inside_right">
-					<div id="activity_center_div_inside_right_div">
-							<div id="activity_center_div_inside_right_div_title">
-									<div id="activity_center_div_inside_right_div_title_h2">
-										<h2>合作银行</h2>
+				<div id="banks_center_div_inside_right">
+					<div id="banks_center_div_inside_right_div">
+							<div id="banks_center_div_inside_right_div_title">
+									<div id="banks_center_div_inside_right_div_title_h2">
+										<h2>银行合作伙伴</h2>
 									</div>
-									<div id="activity_center_div_inside_right_div_title_h5">
-										<h5>Inclusive Finance</h5>
+									<div id="banks_center_div_inside_right_div_title_h5">
+										<h5>Partner</h5>
 									</div>
 							</div>
-							<div id="activity_center_div_inside_right_div_content">
-								<p id="activity_center_div_inside_right_div_content_p">
-										道诚公司深入研究国内各类高成长性人群的现状和需求，为有创业、深造、周转、消费等正当资金需求的客户，无需抵押、担保等繁琐的常规借款程序，即可提供包括信用咨询、评估、信贷方案制定、协议管理等多方面、
-										专业的全程信用 管理服务，便捷、安全地解决他们的资金瓶颈，改善自己的生产和生活。<br><br>
-										道诚公司深信“人人有信用、信用有价值” ，在全国100多个城市和农村地区，成功帮助
-										数十万名农民、学生、工薪阶层、小微企业主等客户获得上百亿元资 金支持，实现了助工、助商、助学、助农的巨大社会价值，努力为中国诚信体系的构建尽到自己的企业公民责任。<br><br>
-								</p>
-								<div id="activity_center_div_inside_right_div_content_div">
-									<div id="activity_center_div_inside_right_div_content_div_title">
-										<p>道诚公司为个人和企业提供全方位多渠道的服务，包括：</p>
+							<div id="banks_center_div_inside_right_div_content">
+								<div id="banks_center_div_inside_right_div_content_owned">
+									<span>全国性股份制商业银行</span>
+									<div id="banks_center_div_inside_right_div_content_owned_div">
+										<img src="images/banks_owned.png">
 									</div>
-									<div id="activity_center_div_inside_right_div_content_div_content">
-										<div class="activity_center_div_inside_right_div_content_div_content_div">
-											<div class="activity_center_div_inside_right_div_content_div_content_div_inside">
-													<div class="activity_center_div_inside_right_div_content_div_content_div_inside_img">
-														<img src="images/typeimage.jpg">
-													</div>
-													<p>个人小额便民贷款</p>
-													<a href="#">更多详情 >></a>
-											</div>
-										</div>
-										<div class="activity_center_div_inside_right_div_content_div_content_div">
-											<div class="activity_center_div_inside_right_div_content_div_content_div_inside">
-													<div class="activity_center_div_inside_right_div_content_div_content_div_inside_img">
-														<img src="images/typeimage.jpg">
-													</div>
-													<p>商汇通卡</p>
-													<a href="#">更多详情 >></a>
-											</div>
-										</div>
-										<div class="activity_center_div_inside_right_div_content_div_content_div">
-											<div class="activity_center_div_inside_right_div_content_div_content_div_inside">
-													<div class="activity_center_div_inside_right_div_content_div_content_div_inside_img">
-														<img src="images/typeimage.jpg">
-													</div>
-													<p>企业流动资金贷款</p>
-													<a href="#">更多详情 >></a>
-											</div>
-										</div>
-										<div class="activity_center_div_inside_right_div_content_div_content_div">
-											<div class="activity_center_div_inside_right_div_content_div_content_div_inside">
-													<div class="activity_center_div_inside_right_div_content_div_content_div_inside_img">
-														<img src="images/typeimage.jpg">
-													</div>
-													<p>企业贷款（联保）</p>
-													<a href="#">更多详情 >></a>
-											</div>
-										</div>
+								</div>
+								<div id="banks_center_div_inside_right_div_content_national">
+									<span>国有商业银行</span>
+									<div id="banks_center_div_inside_right_div_content_national_div">
+										<img src="images/banks_national.png">
 									</div>
 								</div>
 							</div>
@@ -275,9 +238,9 @@
 <!-- bottom -->
 
 <!-- footer -->
-		<div id="activity_bottom_div_foot">
-			<div id="activity_bottom_div_foot_context">
-				<div id="activity_bottom_div_foot_context_link">
+		<div id="banks_bottom_div_foot">
+			<div id="banks_bottom_div_foot_context">
+				<div id="banks_bottom_div_foot_context_link">
 					<div>
 					<a href="#">关于道诚</a><span>|</span>
 					<a href="#">联系我们</a><span>|</span>
@@ -287,13 +250,13 @@
 					<a href="#">建议与投诉</a>
 					</div>
 				</div>
-				<div id="activity_bottom_div_foot_context_copyright">
+				<div id="banks_bottom_div_foot_context_copyright">
 					<span>Copyright &copy; 2013 daochengamc.com Inc. All Rights Reserved. </span>
 				</div>
-				<div id="activity_bottom_div_foot_context_platform">
+				<div id="banks_bottom_div_foot_context_platform">
 					<span><a href="#">成都道诚资产管理有限公司</a>&nbsp;版权所有</span>
 				</div>
-				<div id="activity_bottom_div_foot_context_number">
+				<div id="banks_bottom_div_foot_context_number">
 					<span><a>京ICP备12000680号-1</a>&nbsp;&nbsp;京公网安备110108008323号</span>
 				</div>
 			</div>
