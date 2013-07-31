@@ -220,7 +220,7 @@ body {
 	background-color: transparent;
 }
 #mortgage_center_div_inside_right_div_title_h2{
-	width: 200px;
+	width: 180px;
 	height:80px;
 	float: left;
 	background-color: transparent;
@@ -230,6 +230,7 @@ body {
 	color: #004ea5;
 	background-color: transparent;
 	margin: 0;
+	font-weight:bolder;
 	margin-top: 20px;
 }
 #mortgage_center_div_inside_right_div_title_h5{
@@ -239,7 +240,7 @@ body {
 	background-color: transparent;
 }
 #mortgage_center_div_inside_right_div_title_h5 h5{
-	font-weight: lighter;
+	font-weight: bolder;
 	background-color: transparent;
 	margin: 0;
 	margin-top: 35px;

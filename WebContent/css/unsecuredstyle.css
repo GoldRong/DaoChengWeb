@@ -220,7 +220,7 @@ body {
 	background-color: transparent;
 }
 #unsecured_center_div_inside_right_div_title_h2{
-	width: 200px;
+	width: 220px;
 	height:80px;
 	float: left;
 	background-color: transparent;
@@ -236,6 +236,7 @@ body {
 	width:200px;
 	height:80px;
 	float: left;
+	font-weight:bolder;
 	background-color: transparent;
 }
 #unsecured_center_div_inside_right_div_title_h5 h5{
