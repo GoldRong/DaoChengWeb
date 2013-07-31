@@ -24,12 +24,21 @@
 			});
 		
 		//left 菜单的切换
-		$(".unsecured_center_div_inside_left_li").click(function(){
-			var nowleftmenu=$(this).index();
-			var leftul=$(".unsecured_center_div_inside_left_ul_item");
-			$(leftul[nowleftmenu]).slideToggle();
+		$("#unsecured_center_div_inside_left_li_div_unsecured").click(function(){
+			$("#unsecured_center_div_inside_left_ul_item_unsecured").slideToggle();
 		});
-		
+		$("#unsecured_center_div_inside_left_li_div_mortgage").click(function(){
+			$("#unsecured_center_div_inside_left_ul_item_mortgage").slideToggle();
+		});
+		$("#unsecured_center_div_inside_left_li_div_banks").click(function(){
+			$("#unsecured_center_div_inside_left_ul_item_banks").slideToggle();
+		});
+		$("#unsecured_center_div_inside_left_li_div_zheren").click(function(){
+			$("#unsecured_center_div_inside_left_ul_item_zheren").slideToggle();
+		});
+		$("#unsecured_center_div_inside_left_li_div_about").click(function(){
+			$("#unsecured_center_div_inside_left_ul_item_about").slideToggle();
+		});
 		function init(){
 			submenu=$(".unsecured_top_div_menu_sub_p");
 			$(submenu[1]).show();
@@ -132,10 +141,10 @@
 					<div id="unsecured_center_div_inside_left_menu">
 						<ul id="unsecured_center_div_inside_left_ul">
 							<li class="unsecured_center_div_inside_left_li">
-								<div class="unsecured_center_div_inside_left_li_div">
+								<div class="unsecured_center_div_inside_left_li_div" id="unsecured_center_div_inside_left_li_div_unsecured">
 								<a href="#"  class="unsecured_center_div_inside_left_a">无抵押信用贷款</a>
 								</div>
-								<ul class="unsecured_center_div_inside_left_ul_item">
+								<ul class="unsecured_center_div_inside_left_ul_item" id="unsecured_center_div_inside_left_ul_item_unsecured">
 									<li class="unsecured_center_div_inside_left_li_item"><a href="#" class="unsecured_center_div_inside_left_li_item_a">个人小额便民贷款</a>
 									</li>
 									<li class="unsecured_center_div_inside_left_li_item"><a href="#" class="unsecured_center_div_inside_left_li_item_a">商汇通卡</a>
@@ -147,10 +156,10 @@
 								</ul>
 							</li>
 							<li class="unsecured_center_div_inside_left_li">
-								<div class="unsecured_center_div_inside_left_li_div">
+								<div class="unsecured_center_div_inside_left_li_div" id="unsecured_center_div_inside_left_li_div_mortgage">
 								<a href="#"  class="unsecured_center_div_inside_left_a">企业抵押贷款</a>
 								</div>
-								<ul class="unsecured_center_div_inside_left_ul_item">
+								<ul class="unsecured_center_div_inside_left_ul_item" id="unsecured_center_div_inside_left_ul_item_mortgage">
 									<li class="unsecured_center_div_inside_left_li_item"><a href="#" class="unsecured_center_div_inside_left_li_item_a">个人房产抵押贷款</a>
 									</li>
 									<li class="unsecured_center_div_inside_left_li_item"><a href="#" class="unsecured_center_div_inside_left_li_item_a">个人房产汽车贷款</a>
@@ -160,41 +169,31 @@
 								</ul>
 							</li>
 							<li class="unsecured_center_div_inside_left_li">
-								<div class="unsecured_center_div_inside_left_li_div">
-								<a href="#"  class="unsecured_center_div_inside_left_a">道诚动态</a>
+								<div class="unsecured_center_div_inside_left_li_div" id="unsecured_center_div_inside_left_li_div_banks">
+								<a href="#"  class="unsecured_center_div_inside_left_a">合作银行</a>
 								</div>
-								<ul class="unsecured_center_div_inside_left_ul_item">
-									<li class="unsecured_center_div_inside_left_li_item"><a href="#" class="unsecured_center_div_inside_left_li_item_a">借款咨询服务</a>
-									</li>
-									<li class="unsecured_center_div_inside_left_li_item"><a href="#" class="unsecured_center_div_inside_left_li_item_a">道诚学贷</a>
-									</li>
-									<li class="unsecured_center_div_inside_left_li_item"><a href="#" class="unsecured_center_div_inside_left_li_item_a">道诚租赁</a>
+								<ul class="unsecured_center_div_inside_left_ul_item" id="unsecured_center_div_inside_left_ul_item_banks">
+									<li class="unsecured_center_div_inside_left_li_item"><a href="#" class="unsecured_center_div_inside_left_li_item_a">银行合作伙伴</a>
 									</li>
 								</ul>
 							</li>
 							<li class="unsecured_center_div_inside_left_li">
-								<div class="unsecured_center_div_inside_left_li_div">
+								<div class="unsecured_center_div_inside_left_li_div" id="unsecured_center_div_inside_left_li_div_zheren">
 								<a href="#"  class="unsecured_center_div_inside_left_a">社会责任</a>
 								</div>
-								<ul class="unsecured_center_div_inside_left_ul_item">
-									<li class="unsecured_center_div_inside_left_li_item"><a href="#" class="unsecured_center_div_inside_left_li_item_a">借款咨询服务</a>
-									</li>
-									<li class="unsecured_center_div_inside_left_li_item"><a href="#" class="unsecured_center_div_inside_left_li_item_a">道诚学贷</a>
-									</li>
-									<li class="unsecured_center_div_inside_left_li_item"><a href="#" class="unsecured_center_div_inside_left_li_item_a">道诚租赁</a>
+								<ul class="unsecured_center_div_inside_left_ul_item" id="unsecured_center_div_inside_left_ul_item_zheren">
+									<li class="unsecured_center_div_inside_left_li_item"><a href="#" class="unsecured_center_div_inside_left_li_item_a">道诚社会责任</a>
 									</li>
 								</ul>
 							</li>
 							<li class="unsecured_center_div_inside_left_li">
-								<div class="unsecured_center_div_inside_left_li_div">
+								<div class="unsecured_center_div_inside_left_li_div" id="unsecured_center_div_inside_left_li_div_about">
 								<a href="#"  class="unsecured_center_div_inside_left_a">关于道诚</a>
 								</div>
-								<ul class="unsecured_center_div_inside_left_ul_item">
-									<li class="unsecured_center_div_inside_left_li_item"><a href="#" class="unsecured_center_div_inside_left_li_item_a">借款咨询服务</a>
+								<ul class="unsecured_center_div_inside_left_ul_item" id="unsecured_center_div_inside_left_ul_item_about">
+									<li class="unsecured_center_div_inside_left_li_item"><a href="#" class="unsecured_center_div_inside_left_li_item_a">加入道诚</a>
 									</li>
-									<li class="unsecured_center_div_inside_left_li_item"><a href="#" class="unsecured_center_div_inside_left_li_item_a">道诚学贷</a>
-									</li>
-									<li class="unsecured_center_div_inside_left_li_item"><a href="#" class="unsecured_center_div_inside_left_li_item_a">道诚租赁</a>
+									<li class="unsecured_center_div_inside_left_li_item"><a href="#" class="unsecured_center_div_inside_left_li_item_a">关于道诚</a>
 									</li>
 								</ul>
 							</li>

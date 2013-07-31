@@ -24,10 +24,20 @@
 			});
 		
 		//left 菜单的切换
-		$(".zheren_center_div_inside_left_li").click(function(){
-			var nowleftmenu=$(this).index();
-			var leftul=$(".zheren_center_div_inside_left_ul_item");
-			$(leftul[nowleftmenu]).slideToggle();
+		$("#zheren_center_div_inside_left_li_div_unsecured").click(function(){
+			$("#zheren_center_div_inside_left_ul_item_unsecured").slideToggle();
+		});
+		$("#zheren_center_div_inside_left_li_div_mortgage").click(function(){
+			$("#zheren_center_div_inside_left_ul_item_mortgage").slideToggle();
+		});
+		$("#zheren_center_div_inside_left_li_div_banks").click(function(){
+			$("#zheren_center_div_inside_left_ul_item_banks").slideToggle();
+		});
+		$("#zheren_center_div_inside_left_li_div_zheren").click(function(){
+			$("#zheren_center_div_inside_left_ul_item_zheren").slideToggle();
+		});
+		$("#zheren_center_div_inside_left_li_div_about").click(function(){
+			$("#zheren_center_div_inside_left_ul_item_about").slideToggle();
 		});
 		
 		function init(){
@@ -133,10 +143,10 @@
 					<div id="zheren_center_div_inside_left_menu">
 						<ul id="zheren_center_div_inside_left_ul">
 							<li class="zheren_center_div_inside_left_li">
-								<div class="zheren_center_div_inside_left_li_div">
+								<div class="zheren_center_div_inside_left_li_div" id="zheren_center_div_inside_left_li_div_unsecured">
 								<a href="#"  class="zheren_center_div_inside_left_a">无抵押信用贷款</a>
 								</div>
-								<ul class="zheren_center_div_inside_left_ul_item">
+								<ul class="zheren_center_div_inside_left_ul_item" id="zheren_center_div_inside_left_ul_item_unsecured">
 									<li class="zheren_center_div_inside_left_li_item"><a href="#" class="zheren_center_div_inside_left_li_item_a">个人小额便民贷款</a>
 									</li>
 									<li class="zheren_center_div_inside_left_li_item"><a href="#" class="zheren_center_div_inside_left_li_item_a">商汇通卡</a>
@@ -148,10 +158,10 @@
 								</ul>
 							</li>
 							<li class="zheren_center_div_inside_left_li">
-								<div class="zheren_center_div_inside_left_li_div">
+								<div class="zheren_center_div_inside_left_li_div" id="zheren_center_div_inside_left_li_div_mortgage">
 								<a href="#"  class="zheren_center_div_inside_left_a">企业抵押贷款</a>
 								</div>
-								<ul class="zheren_center_div_inside_left_ul_item">
+								<ul class="zheren_center_div_inside_left_ul_item" id="zheren_center_div_inside_left_ul_item_mortgage">
 									<li class="zheren_center_div_inside_left_li_item"><a href="#" class="zheren_center_div_inside_left_li_item_a">个人房产抵押贷款</a>
 									</li>
 									<li class="zheren_center_div_inside_left_li_item"><a href="#" class="zheren_center_div_inside_left_li_item_a">个人房产汽车贷款</a>
@@ -161,41 +171,31 @@
 								</ul>
 							</li>
 							<li class="zheren_center_div_inside_left_li">
-								<div class="zheren_center_div_inside_left_li_div">
-								<a href="#"  class="zheren_center_div_inside_left_a">道诚动态</a>
+								<div class="zheren_center_div_inside_left_li_div" id="zheren_center_div_inside_left_li_div_banks">
+								<a href="#"  class="zheren_center_div_inside_left_a">合作银行</a>
 								</div>
-								<ul class="zheren_center_div_inside_left_ul_item">
-									<li class="zheren_center_div_inside_left_li_item"><a href="#" class="zheren_center_div_inside_left_li_item_a">借款咨询服务</a>
-									</li>
-									<li class="zheren_center_div_inside_left_li_item"><a href="#" class="zheren_center_div_inside_left_li_item_a">道诚学贷</a>
-									</li>
-									<li class="zheren_center_div_inside_left_li_item"><a href="#" class="zheren_center_div_inside_left_li_item_a">道诚租赁</a>
+								<ul class="zheren_center_div_inside_left_ul_item" id="zheren_center_div_inside_left_ul_item_banks">
+									<li class="zheren_center_div_inside_left_li_item"><a href="#" class="zheren_center_div_inside_left_li_item_a">银行合作伙伴</a>
 									</li>
 								</ul>
 							</li>
 							<li class="zheren_center_div_inside_left_li">
-								<div class="zheren_center_div_inside_left_li_div">
+								<div class="zheren_center_div_inside_left_li_div" id="zheren_center_div_inside_left_li_div_zheren">
 								<a href="#"  class="zheren_center_div_inside_left_a">社会责任</a>
 								</div>
-								<ul class="zheren_center_div_inside_left_ul_item">
-									<li class="zheren_center_div_inside_left_li_item"><a href="#" class="zheren_center_div_inside_left_li_item_a">借款咨询服务</a>
-									</li>
-									<li class="zheren_center_div_inside_left_li_item"><a href="#" class="zheren_center_div_inside_left_li_item_a">道诚学贷</a>
-									</li>
-									<li class="zheren_center_div_inside_left_li_item"><a href="#" class="zheren_center_div_inside_left_li_item_a">道诚租赁</a>
+								<ul class="zheren_center_div_inside_left_ul_item" id="zheren_center_div_inside_left_ul_item_zheren">
+									<li class="zheren_center_div_inside_left_li_item"><a href="#" class="zheren_center_div_inside_left_li_item_a">道诚社会责任</a>
 									</li>
 								</ul>
 							</li>
 							<li class="zheren_center_div_inside_left_li">
-								<div class="zheren_center_div_inside_left_li_div">
+								<div class="zheren_center_div_inside_left_li_div" id="zheren_center_div_inside_left_li_div_about">
 								<a href="#"  class="zheren_center_div_inside_left_a">关于道诚</a>
 								</div>
-								<ul class="zheren_center_div_inside_left_ul_item">
-									<li class="zheren_center_div_inside_left_li_item"><a href="#" class="zheren_center_div_inside_left_li_item_a">借款咨询服务</a>
+								<ul class="zheren_center_div_inside_left_ul_item" id="zheren_center_div_inside_left_ul_item_about">
+									<li class="zheren_center_div_inside_left_li_item"><a href="#" class="zheren_center_div_inside_left_li_item_a">加入道诚</a>
 									</li>
-									<li class="zheren_center_div_inside_left_li_item"><a href="#" class="zheren_center_div_inside_left_li_item_a">道诚学贷</a>
-									</li>
-									<li class="zheren_center_div_inside_left_li_item"><a href="#" class="zheren_center_div_inside_left_li_item_a">道诚租赁</a>
+									<li class="zheren_center_div_inside_left_li_item"><a href="#" class="zheren_center_div_inside_left_li_item_a">关于道诚</a>
 									</li>
 								</ul>
 							</li>
