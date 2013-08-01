@@ -24,16 +24,24 @@
 			});
 		
 		//left 菜单的切换
-		$(".unsecured_person_center_div_inside_left_li").click(function(){
-			var nowleftmenu=$(this).index();
-			var leftul=$(".unsecured_person_center_div_inside_left_ul_item");
-			$(leftul[nowleftmenu]).slideToggle();
+		$("#unsecured_person_center_div_inside_left_li_div_unsecured_person").click(function(){
+			$("#unsecured_person_center_div_inside_left_ul_item_unsecured_person").slideToggle();
 		});
-		
+		$("#unsecured_person_center_div_inside_left_li_div_mortgage").click(function(){
+			$("#unsecured_person_center_div_inside_left_ul_item_mortgage").slideToggle();
+		});
+		$("#unsecured_person_center_div_inside_left_li_div_banks").click(function(){
+			$("#unsecured_person_center_div_inside_left_ul_item_banks").slideToggle();
+		});
+		$("#unsecured_person_center_div_inside_left_li_div_zheren").click(function(){
+			$("#unsecured_person_center_div_inside_left_ul_item_zheren").slideToggle();
+		});
+		$("#unsecured_person_center_div_inside_left_li_div_about").click(function(){
+			$("#unsecured_person_center_div_inside_left_ul_item_about").slideToggle();
+		});
 		function init(){
 			submenu=$(".unsecured_person_top_div_menu_sub_p");
 			$(submenu[1]).show();
-			
 			menuitem=$(".unsecured_person_top_div_menu_li");
 			$(menuitem[1]).css("background-color","gray");
 			initLeftMenu();
@@ -73,8 +81,8 @@
 				<!-- 菜单选项 -->
 				<ul id="unsecured_person_top_div_menu_ul">
 					<li class="unsecured_person_top_div_menu_li"><a href="http://localhost:8080/DaoChengWeb/index.html" class="unsecured_person_top_div_menu_li_a">首页</a></li>
-					<li class="unsecured_person_top_div_menu_li"><a href="http://localhost:8080/DaoChengWeb/unsecured_person.html" class="unsecured_person_top_div_menu_li_a">无抵押信用贷款</a></li>
-					<li class="unsecured_person_top_div_menu_li"><a href="http://localhost:8080/DaoChengWeb/mortgage.html" class="unsecured_person_top_div_menu_li_a">抵押贷款</a></li>
+					<li class="unsecured_person_top_div_menu_li"><a href="http://localhost:8080/DaoChengWeb/unsecured.html" class="unsecured_person_top_div_menu_li_a">无抵押信用贷款</a></li>
+					<li class="unsecured_person_top_div_menu_li"><a href="http://localhost:8080/DaoChengWeb/mortgage.html" class="unsecured_person_top_div_menu_li_a">企业抵押贷款</a></li>
 					<li class="unsecured_person_top_div_menu_li"><a href="http://localhost:8080/DaoChengWeb/banks.html" class="unsecured_person_top_div_menu_li_a">合作银行</a></li>
 					<li class="unsecured_person_top_div_menu_li"><a href="http://localhost:8080/DaoChengWeb/zheren.html" class="unsecured_person_top_div_menu_li_a">社会责任</a></li>
 					<li class="unsecured_person_top_div_menu_li"><a href="http://localhost:8080/DaoChengWeb/about.html" class="unsecured_person_top_div_menu_li_a">关于道诚</a></li>
@@ -90,33 +98,33 @@
 						</p>
 						<p class="unsecured_person_top_div_menu_sub_p">
 							<span style="margin-left: 181px"></span>
-							<a href="#">个人小额便民贷款</a>&nbsp;&nbsp;|&nbsp;&nbsp;
-							<a href="#">商汇通卡</a>&nbsp;&nbsp;|&nbsp;&nbsp;
-							<a href="#">企业流动资金贷款</a>&nbsp;&nbsp;|&nbsp;&nbsp;
-							<a href="#">企业贷款（联保）</a>&nbsp;&nbsp;
+							<a href="http://localhost:8080/DaoChengWeb/unsecured_person.html">个人小额便民贷款</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+							<a href="http://localhost:8080/DaoChengWeb/unsecured_cards.html">商汇通卡</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+							<a href="http://localhost:8080/DaoChengWeb/unsecured_businessflow.html">企业流动资金贷款</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+							<a href="http://localhost:8080/DaoChengWeb/unsecured_businessbail.html">企业贷款（联保）</a>&nbsp;&nbsp;
 						</p>
 						
 						<p class="unsecured_person_top_div_menu_sub_p">
 							<span style="margin-left: 364px"></span>
-							<a href="#">个人房产抵押贷款</a>&nbsp;&nbsp;|&nbsp;&nbsp;
-							<a href="#">个人房产汽车贷款</a>&nbsp;&nbsp;|&nbsp;&nbsp;
-							<a href="#">贷款主体</a>&nbsp;&nbsp;
+							<a href="http://localhost:8080/DaoChengWeb/mortgage_house.html">个人房产抵押贷款</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+							<a href="http://localhost:8080/DaoChengWeb/mortgage_car.html">个人房产汽车贷款</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+							<a href="http://localhost:8080/DaoChengWeb/mortgage_object.html">贷款主体</a>&nbsp;&nbsp;
 						</p>
 						
 						<p class="unsecured_person_top_div_menu_sub_p">
 							<span style="margin-left: 546px"></span>
-							<a href="#">银行合作伙伴</a>
+							<a href="http://localhost:8080/DaoChengWeb/banks.html">银行合作伙伴</a>
 						</p>
 
 						<p class="unsecured_person_top_div_menu_sub_p">
 							<span style="margin-left: 727px"></span>
-							<a href="#">道诚社会责任</a>
+							<a href="http://localhost:8080/DaoChengWeb/zheren.html">道诚社会责任</a>
 						</p>
 						
 						<p class="unsecured_person_top_div_menu_sub_p">
 							<span style="margin-left: 900px"></span>
-							<a href="#">加入道诚</a>&nbsp;&nbsp;|&nbsp;&nbsp;
-							<a href="#">关于道诚</a>					
+							<a href="http://localhost:8080/DaoChengWeb/about.html">加入道诚</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+							<a href="http://localhost:8080/DaoChengWeb/about.html">关于道诚</a>					
 						</p>
 				</div>
 		</div>
@@ -133,69 +141,59 @@
 					<div id="unsecured_person_center_div_inside_left_menu">
 						<ul id="unsecured_person_center_div_inside_left_ul">
 							<li class="unsecured_person_center_div_inside_left_li">
-								<div class="unsecured_person_center_div_inside_left_li_div">
+								<div class="unsecured_person_center_div_inside_left_li_div" id="unsecured_person_center_div_inside_left_li_div_unsecured_person">
 								<a href="#"  class="unsecured_person_center_div_inside_left_a">无抵押信用贷款</a>
 								</div>
-								<ul class="unsecured_person_center_div_inside_left_ul_item">
-									<li class="unsecured_person_center_div_inside_left_li_item"><a href="#" class="unsecured_person_center_div_inside_left_li_item_a">个人小额便民贷款</a>
+								<ul class="unsecured_person_center_div_inside_left_ul_item" id="unsecured_person_center_div_inside_left_ul_item_unsecured_person">
+									<li class="unsecured_person_center_div_inside_left_li_item"><a href="http://localhost:8080/DaoChengWeb/unsecured_person.html" class="unsecured_person_center_div_inside_left_li_item_a">个人小额便民贷款</a>
 									</li>
-									<li class="unsecured_person_center_div_inside_left_li_item"><a href="#" class="unsecured_person_center_div_inside_left_li_item_a">商汇通卡</a>
+									<li class="unsecured_person_center_div_inside_left_li_item"><a href="http://localhost:8080/DaoChengWeb/unsecured_cards.html" class="unsecured_person_center_div_inside_left_li_item_a">商汇通卡</a>
 									</li>
-									<li class="unsecured_person_center_div_inside_left_li_item"><a href="#" class="unsecured_person_center_div_inside_left_li_item_a">企业流动资金贷款</a>
+									<li class="unsecured_person_center_div_inside_left_li_item"><a href="http://localhost:8080/DaoChengWeb/unsecured_businessflow.html" class="unsecured_person_center_div_inside_left_li_item_a">企业流动资金贷款</a>
 									</li>
-									<li class="unsecured_person_center_div_inside_left_li_item"><a href="#" class="unsecured_person_center_div_inside_left_li_item_a">企业贷款（联保）</a>
+									<li class="unsecured_person_center_div_inside_left_li_item"><a href="http://localhost:8080/DaoChengWeb/unsecured_businessbail.html" class="unsecured_person_center_div_inside_left_li_item_a">企业贷款（联保）</a>
 									</li>
 								</ul>
 							</li>
 							<li class="unsecured_person_center_div_inside_left_li">
-								<div class="unsecured_person_center_div_inside_left_li_div">
-								<a href="#"  class="unsecured_person_center_div_inside_left_a">抵押贷款</a>
+								<div class="unsecured_person_center_div_inside_left_li_div" id="unsecured_person_center_div_inside_left_li_div_mortgage">
+								<a href="#"  class="unsecured_person_center_div_inside_left_a">企业抵押贷款</a>
 								</div>
-								<ul class="unsecured_person_center_div_inside_left_ul_item">
-									<li class="unsecured_person_center_div_inside_left_li_item"><a href="#" class="unsecured_person_center_div_inside_left_li_item_a">个人房产抵押贷款</a>
+								<ul class="unsecured_person_center_div_inside_left_ul_item" id="unsecured_person_center_div_inside_left_ul_item_mortgage">
+									<li class="unsecured_person_center_div_inside_left_li_item"><a href="http://localhost:8080/DaoChengWeb/mortgage_house.html" class="unsecured_person_center_div_inside_left_li_item_a">个人房产抵押贷款</a>
 									</li>
-									<li class="unsecured_person_center_div_inside_left_li_item"><a href="#" class="unsecured_person_center_div_inside_left_li_item_a">个人房产汽车贷款</a>
+									<li class="unsecured_person_center_div_inside_left_li_item"><a href="http://localhost:8080/DaoChengWeb/mortgage_car.html" class="unsecured_person_center_div_inside_left_li_item_a">个人房产汽车贷款</a>
 									</li>
-									<li class="unsecured_person_center_div_inside_left_li_item"><a href="#" class="unsecured_person_center_div_inside_left_li_item_a">贷款主体</a>
+									<li class="unsecured_person_center_div_inside_left_li_item"><a href="http://localhost:8080/DaoChengWeb/mortgage_object.html" class="unsecured_person_center_div_inside_left_li_item_a">贷款主体</a>
 									</li>
 								</ul>
 							</li>
 							<li class="unsecured_person_center_div_inside_left_li">
-								<div class="unsecured_person_center_div_inside_left_li_div">
-								<a href="#"  class="unsecured_person_center_div_inside_left_a">道诚动态</a>
+								<div class="unsecured_person_center_div_inside_left_li_div" id="unsecured_person_center_div_inside_left_li_div_banks">
+								<a href="#"  class="unsecured_person_center_div_inside_left_a">合作银行</a>
 								</div>
-								<ul class="unsecured_person_center_div_inside_left_ul_item">
-									<li class="unsecured_person_center_div_inside_left_li_item"><a href="#" class="unsecured_person_center_div_inside_left_li_item_a">借款咨询服务</a>
-									</li>
-									<li class="unsecured_person_center_div_inside_left_li_item"><a href="#" class="unsecured_person_center_div_inside_left_li_item_a">道诚学贷</a>
-									</li>
-									<li class="unsecured_person_center_div_inside_left_li_item"><a href="#" class="unsecured_person_center_div_inside_left_li_item_a">道诚租赁</a>
+								<ul class="unsecured_person_center_div_inside_left_ul_item" id="unsecured_person_center_div_inside_left_ul_item_banks">
+									<li class="unsecured_person_center_div_inside_left_li_item"><a href="http://localhost:8080/DaoChengWeb/banks.html" class="unsecured_person_center_div_inside_left_li_item_a">银行合作伙伴</a>
 									</li>
 								</ul>
 							</li>
 							<li class="unsecured_person_center_div_inside_left_li">
-								<div class="unsecured_person_center_div_inside_left_li_div">
+								<div class="unsecured_person_center_div_inside_left_li_div" id="unsecured_person_center_div_inside_left_li_div_zheren">
 								<a href="#"  class="unsecured_person_center_div_inside_left_a">社会责任</a>
 								</div>
-								<ul class="unsecured_person_center_div_inside_left_ul_item">
-									<li class="unsecured_person_center_div_inside_left_li_item"><a href="#" class="unsecured_person_center_div_inside_left_li_item_a">借款咨询服务</a>
-									</li>
-									<li class="unsecured_person_center_div_inside_left_li_item"><a href="#" class="unsecured_person_center_div_inside_left_li_item_a">道诚学贷</a>
-									</li>
-									<li class="unsecured_person_center_div_inside_left_li_item"><a href="#" class="unsecured_person_center_div_inside_left_li_item_a">道诚租赁</a>
+								<ul class="unsecured_person_center_div_inside_left_ul_item" id="unsecured_person_center_div_inside_left_ul_item_zheren">
+									<li class="unsecured_person_center_div_inside_left_li_item"><a href="http://localhost:8080/DaoChengWeb/zheren.html" class="unsecured_person_center_div_inside_left_li_item_a">道诚社会责任</a>
 									</li>
 								</ul>
 							</li>
 							<li class="unsecured_person_center_div_inside_left_li">
-								<div class="unsecured_person_center_div_inside_left_li_div">
+								<div class="unsecured_person_center_div_inside_left_li_div" id="unsecured_person_center_div_inside_left_li_div_about">
 								<a href="#"  class="unsecured_person_center_div_inside_left_a">关于道诚</a>
 								</div>
-								<ul class="unsecured_person_center_div_inside_left_ul_item">
-									<li class="unsecured_person_center_div_inside_left_li_item"><a href="#" class="unsecured_person_center_div_inside_left_li_item_a">借款咨询服务</a>
+								<ul class="unsecured_person_center_div_inside_left_ul_item" id="unsecured_person_center_div_inside_left_ul_item_about">
+									<li class="unsecured_person_center_div_inside_left_li_item"><a href="http://localhost:8080/DaoChengWeb/about.html" class="unsecured_person_center_div_inside_left_li_item_a">加入道诚</a>
 									</li>
-									<li class="unsecured_person_center_div_inside_left_li_item"><a href="#" class="unsecured_person_center_div_inside_left_li_item_a">道诚学贷</a>
-									</li>
-									<li class="unsecured_person_center_div_inside_left_li_item"><a href="#" class="unsecured_person_center_div_inside_left_li_item_a">道诚租赁</a>
+									<li class="unsecured_person_center_div_inside_left_li_item"><a href="http://localhost:8080/DaoChengWeb/about.html" class="unsecured_person_center_div_inside_left_li_item_a">关于道诚</a>
 									</li>
 								</ul>
 							</li>
@@ -209,7 +207,7 @@
 										<h2>个人小额便民贷款</h2>
 									</div>
 									<div id="unsecured_person_center_div_inside_right_div_title_h5">
-										<h5>Inclusive Finance</h5>
+										<h5>Unsecured Person</h5>
 									</div>
 							</div>
 							<div id="unsecured_person_center_div_inside_right_div_content">
@@ -225,13 +223,13 @@
 								</p>
 								<div id="unsecured_person_center_div_inside_right_div_content_div">
 									<div id="unsecured_person_center_div_inside_right_div_content_div_title">
-										<p>道诚公司为个人和企业提供全方位多渠道的服务，包括：</p>
+										<p>道诚公司为个人和企业提供全方位多渠道无抵押信用贷款的服务，包括：</p>
 									</div>
 									<div id="unsecured_person_center_div_inside_right_div_content_div_content">
 										<div class="unsecured_person_center_div_inside_right_div_content_div_content_div">
 											<div class="unsecured_person_center_div_inside_right_div_content_div_content_div_inside">
 													<div class="unsecured_person_center_div_inside_right_div_content_div_content_div_inside_img">
-														<img src="images/typeimage.jpg">
+														<img src="images/unsecured_person.png">
 													</div>
 													<p>个人小额便民贷款</p>
 													<a href="#">更多详情 >></a>
@@ -240,7 +238,7 @@
 										<div class="unsecured_person_center_div_inside_right_div_content_div_content_div">
 											<div class="unsecured_person_center_div_inside_right_div_content_div_content_div_inside">
 													<div class="unsecured_person_center_div_inside_right_div_content_div_content_div_inside_img">
-														<img src="images/typeimage.jpg">
+														<img src="images/unsecured_cards.png">
 													</div>
 													<p>商汇通卡</p>
 													<a href="#">更多详情 >></a>
@@ -249,7 +247,7 @@
 										<div class="unsecured_person_center_div_inside_right_div_content_div_content_div">
 											<div class="unsecured_person_center_div_inside_right_div_content_div_content_div_inside">
 													<div class="unsecured_person_center_div_inside_right_div_content_div_content_div_inside_img">
-														<img src="images/typeimage.jpg">
+														<img src="images/unsecured_flow.png">
 													</div>
 													<p>企业流动资金贷款</p>
 													<a href="#">更多详情 >></a>
@@ -258,7 +256,7 @@
 										<div class="unsecured_person_center_div_inside_right_div_content_div_content_div">
 											<div class="unsecured_person_center_div_inside_right_div_content_div_content_div_inside">
 													<div class="unsecured_person_center_div_inside_right_div_content_div_content_div_inside_img">
-														<img src="images/typeimage.jpg">
+														<img src="images/unsecured_itw.png">
 													</div>
 													<p>企业贷款（联保）</p>
 													<a href="#">更多详情 >></a>

@@ -236,10 +236,11 @@ body {
 	width:200px;
 	height:80px;
 	float: left;
+	
 	background-color: transparent;
 }
 #unsecured_person_center_div_inside_right_div_title_h5 h5{
-	font-weight: lighter;
+	font-weight:bolder;
 	background-color: transparent;
 	margin: 0;
 	margin-top: 35px;
