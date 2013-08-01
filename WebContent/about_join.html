@@ -3,7 +3,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <script type="text/javascript" src="scripts/jquery-1.10.1.js"></script>
-<link rel="stylesheet" type="text/css" href="css/aboutstyle.css">
+<link rel="stylesheet" type="text/css" href="css/about_joinstyle.css">
 <link rel="shortcut icon" href="images/logo_mini.ico" />
 <script type="text/javascript" src="http://api.map.baidu.com/api?key=&v=1.1&services=true"></script>
 <style type="text/css">
@@ -11,7 +11,7 @@
     .iw_poi_content {font:12px arial,sans-serif;overflow:visible;padding-top:4px;white-space:-moz-pre-wrap;word-wrap:break-word}
 </style>
 <script type="text/javascript">
-	var nowabout;
+	var nowabout_join;
 	var submenu;
 	var menuitem;
 	var leftmenu;
@@ -21,45 +21,45 @@
 		//初始化
 		init();
 		//初始化头部的菜单
-		$(".about_top_div_menu_li").mouseover(function(){
-				nowabout=$(this).index();
+		$(".about_join_top_div_menu_li").mouseover(function(){
+				nowabout_join=$(this).index();
 				submenu.hide();
-				$(submenu[nowabout]).show();
+				$(submenu[nowabout_join]).show();
 			});
 		
 		//left 菜单的切换
-		$("#about_center_div_inside_left_li_div_unsecured").click(function(){
-			$("#about_center_div_inside_left_ul_item_unsecured").slideToggle();
+		$("#about_join_center_div_inside_left_li_div_unsecured").click(function(){
+			$("#about_join_center_div_inside_left_ul_item_unsecured").slideToggle();
 		});
-		$("#about_center_div_inside_left_li_div_mortgage").click(function(){
-			$("#about_center_div_inside_left_ul_item_mortgage").slideToggle();
+		$("#about_join_center_div_inside_left_li_div_mortgage").click(function(){
+			$("#about_join_center_div_inside_left_ul_item_mortgage").slideToggle();
 		});
-		$("#about_center_div_inside_left_li_div_banks").click(function(){
-			$("#about_center_div_inside_left_ul_item_banks").slideToggle();
+		$("#about_join_center_div_inside_left_li_div_banks").click(function(){
+			$("#about_join_center_div_inside_left_ul_item_banks").slideToggle();
 		});
-		$("#about_center_div_inside_left_li_div_zheren").click(function(){
-			$("#about_center_div_inside_left_ul_item_zheren").slideToggle();
+		$("#about_join_center_div_inside_left_li_div_zheren").click(function(){
+			$("#about_join_center_div_inside_left_ul_item_zheren").slideToggle();
 		});
-		$("#about_center_div_inside_left_li_div_about").click(function(){
-			$("#about_center_div_inside_left_ul_item_about").slideToggle();
+		$("#about_join_center_div_inside_left_li_div_about_join").click(function(){
+			$("#about_join_center_div_inside_left_ul_item_about_join").slideToggle();
 		});
 		
 		function init(){
-			submenu=$(".about_top_div_menu_sub_p");
+			submenu=$(".about_join_top_div_menu_sub_p");
 			$(submenu[5]).show();
 			
-			menuitem=$(".about_top_div_menu_li");
+			menuitem=$(".about_join_top_div_menu_li");
 			$(menuitem[5]).css("background-color","gray");
 			initLeftMenu();
 			
-			var leftul=$(".about_center_div_inside_left_ul_item");
+			var leftul=$(".about_join_center_div_inside_left_ul_item");
 			$(leftul[4]).show();
 			
 		}
 		//初始化左菜单
 		function initLeftMenu(){
-			leftmenu=$(".about_center_div_inside_left_li");
-			leftmenuul=$(".about_center_div_inside_left_ul_item");
+			leftmenu=$(".about_join_center_div_inside_left_li");
+			leftmenuul=$(".about_join_center_div_inside_left_ul_item");
 		}
 		//初始化百度地图
 		function initBaiduMap(){
@@ -75,37 +75,37 @@
 <script type="text/javascript" src="http://v3.jiathis.com/code/jiathis_r.js?uid=1372492823731576&btn=r1.gif" charset="utf-8"></script>
 <!-- JiaThis Button END -->
 
-	<div id="about_super_div">
+	<div id="about_join_super_div">
 <!--head  -->
-		<div id="about_top_div">
-			<div id="about_top_head">
-				<div id="about_top_head_logo">
+		<div id="about_join_top_div">
+			<div id="about_join_top_head">
+				<div id="about_join_top_head_logo">
 					<img alt="道诚资产管理有限公司" src="images/logo_daocheng.png">
 				</div>
-				<div id="about_top_head_login">
-					<a href="http://exmail.qq.com/login" id="about_top_head_a">信贷经理登录</a>
+				<div id="about_join_top_head_login">
+					<a href="http://exmail.qq.com/login" id="about_join_top_head_a">信贷经理登录</a>
 				</div>
 			</div>
-			<div id=about_top_div_menu>
+			<div id=about_join_top_div_menu>
 				<!-- 菜单选项 -->
-				<ul id="about_top_div_menu_ul">
-					<li class="about_top_div_menu_li"><a href="http://localhost:8080/DaoChengWeb/index.html" class="about_top_div_menu_li_a">首页</a></li>
-					<li class="about_top_div_menu_li"><a href="http://localhost:8080/DaoChengWeb/unsecured.html" class="about_top_div_menu_li_a">无抵押信用贷款</a></li>
-					<li class="about_top_div_menu_li"><a href="http://localhost:8080/DaoChengWeb/mortgage.html" class="about_top_div_menu_li_a">企业抵押贷款</a></li>
-					<li class="about_top_div_menu_li"><a href="http://localhost:8080/DaoChengWeb/banks.html" class="about_top_div_menu_li_a">合作银行</a></li>
-					<li class="about_top_div_menu_li"><a href="http://localhost:8080/DaoChengWeb/zheren.html" class="about_top_div_menu_li_a">社会责任</a></li>
-					<li class="about_top_div_menu_li"><a href="http://localhost:8080/DaoChengWeb/about.html" class="about_top_div_menu_li_a">关于道诚</a></li>
+				<ul id="about_join_top_div_menu_ul">
+					<li class="about_join_top_div_menu_li"><a href="http://localhost:8080/DaoChengWeb/index.html" class="about_join_top_div_menu_li_a">首页</a></li>
+					<li class="about_join_top_div_menu_li"><a href="http://localhost:8080/DaoChengWeb/unsecured.html" class="about_join_top_div_menu_li_a">无抵押信用贷款</a></li>
+					<li class="about_join_top_div_menu_li"><a href="http://localhost:8080/DaoChengWeb/mortgage.html" class="about_join_top_div_menu_li_a">企业抵押贷款</a></li>
+					<li class="about_join_top_div_menu_li"><a href="http://localhost:8080/DaoChengWeb/banks.html" class="about_join_top_div_menu_li_a">合作银行</a></li>
+					<li class="about_join_top_div_menu_li"><a href="http://localhost:8080/DaoChengWeb/zheren.html" class="about_join_top_div_menu_li_a">社会责任</a></li>
+					<li class="about_join_top_div_menu_li"><a href="http://localhost:8080/DaoChengWeb/about.html" class="about_join_top_div_menu_li_a">关于道诚</a></li>
 				</ul>
 
 			</div>
 		</div>
 		<!-- 子选项 -->
-		<div id="about_top_div_submenu">
+		<div id="about_join_top_div_submenu">
 				
-				<div id="about_top_div_menu_sub">
-						<p class="about_top_div_menu_sub_p">
+				<div id="about_join_top_div_menu_sub">
+						<p class="about_join_top_div_menu_sub_p">
 						</p>
-						<p class="about_top_div_menu_sub_p">
+						<p class="about_join_top_div_menu_sub_p">
 							<span style="margin-left: 181px"></span>
 							<a href="http://localhost:8080/DaoChengWeb/unsecured_person.html">个人小额便民贷款</a>&nbsp;&nbsp;|&nbsp;&nbsp;
 							<a href="http://localhost:8080/DaoChengWeb/unsecured_cards.html">商汇通卡</a>&nbsp;&nbsp;|&nbsp;&nbsp;
@@ -113,24 +113,24 @@
 							<a href="http://localhost:8080/DaoChengWeb/unsecured_businessbail.html">企业贷款（联保）</a>&nbsp;&nbsp;
 						</p>
 						
-						<p class="about_top_div_menu_sub_p">
+						<p class="about_join_top_div_menu_sub_p">
 							<span style="margin-left: 364px"></span>
 							<a href="http://localhost:8080/DaoChengWeb/mortgage_house.html">个人房产抵押贷款</a>&nbsp;&nbsp;|&nbsp;&nbsp;
 							<a href="http://localhost:8080/DaoChengWeb/mortgage_car.html">个人房产汽车贷款</a>&nbsp;&nbsp;|&nbsp;&nbsp;
 							<a href="http://localhost:8080/DaoChengWeb/mortgage_object.html">贷款主体</a>&nbsp;&nbsp;
 						</p>
 						
-						<p class="about_top_div_menu_sub_p">
+						<p class="about_join_top_div_menu_sub_p">
 							<span style="margin-left: 546px"></span>
 							<a href="http://localhost:8080/DaoChengWeb/banks.html">银行合作伙伴</a>
 						</p>
 
-						<p class="about_top_div_menu_sub_p">
+						<p class="about_join_top_div_menu_sub_p">
 							<span style="margin-left: 727px"></span>
 							<a href="http://localhost:8080/DaoChengWeb/zheren.html">道诚社会责任</a>
 						</p>
 						
-						<p class="about_top_div_menu_sub_p">
+						<p class="about_join_top_div_menu_sub_p">
 							<span style="margin-left: 900px"></span>
 							<a href="http://localhost:8080/DaoChengWeb/about_join.html">加入道诚</a>&nbsp;&nbsp;|&nbsp;&nbsp;
 							<a href="http://localhost:8080/DaoChengWeb/about.html">关于道诚</a>					
@@ -138,95 +138,97 @@
 				</div>
 		</div>
 <!-- center -->
-		<div id="about_center_div">
-			<div id="about_center_div_outside">
+		<div id="about_join_center_div">
+			<div id="about_join_center_div_outside">
 			<!-- adtitle -->
-			<div id="about_center_div_top">
+			<div id="about_join_center_div_top">
 				<img src="images/banner_about.jpg">
 			</div>
 			<!-- 内容 -->
-			<div id="about_center_div_inside">
-				<div id="about_center_div_inside_left">
-					<div id="about_center_div_inside_left_menu">
-						<ul id="about_center_div_inside_left_ul">
-							<li class="about_center_div_inside_left_li">
-								<div class="about_center_div_inside_left_li_div" id="about_center_div_inside_left_li_div_unsecured">
-								<a href="#"  class="about_center_div_inside_left_a">无抵押信用贷款</a>
+			<div id="about_join_center_div_inside">
+				<div id="about_join_center_div_inside_left">
+					<div id="about_join_center_div_inside_left_menu">
+						<ul id="about_join_center_div_inside_left_ul">
+							<li class="about_join_center_div_inside_left_li">
+								<div class="about_join_center_div_inside_left_li_div" id="about_join_center_div_inside_left_li_div_unsecured">
+								<a href="#"  class="about_join_center_div_inside_left_a">无抵押信用贷款</a>
 								</div>
-								<ul class="about_center_div_inside_left_ul_item" id="about_center_div_inside_left_ul_item_unsecured">
-									<li class="about_center_div_inside_left_li_item"><a href="http://localhost:8080/DaoChengWeb/unsecured_person.html" class="about_center_div_inside_left_li_item_a">个人小额便民贷款</a>
+								<ul class="about_join_center_div_inside_left_ul_item" id="about_join_center_div_inside_left_ul_item_unsecured">
+									<li class="about_join_center_div_inside_left_li_item"><a href="http://localhost:8080/DaoChengWeb/unsecured_person.html" class="about_join_center_div_inside_left_li_item_a">个人小额便民贷款</a>
 									</li>
-									<li class="about_center_div_inside_left_li_item"><a href="http://localhost:8080/DaoChengWeb/unsecured_cards.html" class="about_center_div_inside_left_li_item_a">商汇通卡</a>
+									<li class="about_join_center_div_inside_left_li_item"><a href="http://localhost:8080/DaoChengWeb/unsecured_cards.html" class="about_join_center_div_inside_left_li_item_a">商汇通卡</a>
 									</li>
-									<li class="about_center_div_inside_left_li_item"><a href="http://localhost:8080/DaoChengWeb/unsecured_businessflow.html" class="about_center_div_inside_left_li_item_a">企业流动资金贷款</a>
+									<li class="about_join_center_div_inside_left_li_item"><a href="http://localhost:8080/DaoChengWeb/unsecured_businessflow.html" class="about_join_center_div_inside_left_li_item_a">企业流动资金贷款</a>
 									</li>
-									<li class="about_center_div_inside_left_li_item"><a href="http://localhost:8080/DaoChengWeb/unsecured_businessbail.html" class="about_center_div_inside_left_li_item_a">企业贷款（联保）</a>
+									<li class="about_join_center_div_inside_left_li_item"><a href="http://localhost:8080/DaoChengWeb/unsecured_businessbail.html" class="about_join_center_div_inside_left_li_item_a">企业贷款（联保）</a>
 									</li>
 								</ul>
 							</li>
-							<li class="about_center_div_inside_left_li">
-								<div class="about_center_div_inside_left_li_div" id="about_center_div_inside_left_li_div_mortgage">
-								<a href="#"  class="about_center_div_inside_left_a">企业抵押贷款</a>
+							<li class="about_join_center_div_inside_left_li">
+								<div class="about_join_center_div_inside_left_li_div" id="about_join_center_div_inside_left_li_div_mortgage">
+								<a href="#"  class="about_join_center_div_inside_left_a">企业抵押贷款</a>
 								</div>
-								<ul class="about_center_div_inside_left_ul_item" id="about_center_div_inside_left_ul_item_mortgage">
-									<li class="about_center_div_inside_left_li_item"><a href="http://localhost:8080/DaoChengWeb/mortgage_house.html" class="about_center_div_inside_left_li_item_a">个人房产抵押贷款</a>
+								<ul class="about_join_center_div_inside_left_ul_item" id="about_join_center_div_inside_left_ul_item_mortgage">
+									<li class="about_join_center_div_inside_left_li_item"><a href="http://localhost:8080/DaoChengWeb/mortgage_house.html" class="about_join_center_div_inside_left_li_item_a">个人房产抵押贷款</a>
 									</li>
-									<li class="about_center_div_inside_left_li_item"><a href="http://localhost:8080/DaoChengWeb/mortgage_car.html" class="about_center_div_inside_left_li_item_a">个人房产汽车贷款</a>
+									<li class="about_join_center_div_inside_left_li_item"><a href="http://localhost:8080/DaoChengWeb/mortgage_car.html" class="about_join_center_div_inside_left_li_item_a">个人房产汽车贷款</a>
 									</li>
-									<li class="about_center_div_inside_left_li_item"><a href="http://localhost:8080/DaoChengWeb/mortgage_object.html" class="about_center_div_inside_left_li_item_a">贷款主体</a>
+									<li class="about_join_center_div_inside_left_li_item"><a href="http://localhost:8080/DaoChengWeb/mortgage_object.html" class="about_join_center_div_inside_left_li_item_a">贷款主体</a>
 									</li>
 								</ul>
 							</li>
-							<li class="about_center_div_inside_left_li">
-								<div class="about_center_div_inside_left_li_div" id="about_center_div_inside_left_li_div_banks">
-								<a href="#"  class="about_center_div_inside_left_a">合作银行</a>
+							<li class="about_join_center_div_inside_left_li">
+								<div class="about_join_center_div_inside_left_li_div" id="about_join_center_div_inside_left_li_div_banks">
+								<a href="#"  class="about_join_center_div_inside_left_a">合作银行</a>
 								</div>
-								<ul class="about_center_div_inside_left_ul_item" id="about_center_div_inside_left_ul_item_banks">
-									<li class="about_center_div_inside_left_li_item"><a href="http://localhost:8080/DaoChengWeb/banks.html" class="about_center_div_inside_left_li_item_a">银行合作伙伴</a>
+								<ul class="about_join_center_div_inside_left_ul_item" id="about_join_center_div_inside_left_ul_item_banks">
+									<li class="about_join_center_div_inside_left_li_item"><a href="http://localhost:8080/DaoChengWeb/banks.html" class="about_join_center_div_inside_left_li_item_a">银行合作伙伴</a>
 									</li>
 								</ul>
 							</li>
-							<li class="about_center_div_inside_left_li">
-								<div class="about_center_div_inside_left_li_div" id="about_center_div_inside_left_li_div_zheren">
-								<a href="#"  class="about_center_div_inside_left_a">社会责任</a>
+							<li class="about_join_center_div_inside_left_li">
+								<div class="about_join_center_div_inside_left_li_div" id="about_join_center_div_inside_left_li_div_zheren">
+								<a href="#"  class="about_join_center_div_inside_left_a">社会责任</a>
 								</div>
-								<ul class="about_center_div_inside_left_ul_item" id="about_center_div_inside_left_ul_item_zheren">
-									<li class="about_center_div_inside_left_li_item"><a href="http://localhost:8080/DaoChengWeb/zheren.html" class="about_center_div_inside_left_li_item_a">道诚社会责任</a>
+								<ul class="about_join_center_div_inside_left_ul_item" id="about_join_center_div_inside_left_ul_item_zheren">
+									<li class="about_join_center_div_inside_left_li_item"><a href="http://localhost:8080/DaoChengWeb/zheren.html" class="about_join_center_div_inside_left_li_item_a">道诚社会责任</a>
 									</li>
 								</ul>
 							</li>
-							<li class="about_center_div_inside_left_li">
-								<div class="about_center_div_inside_left_li_div" id="about_center_div_inside_left_li_div_about">
-								<a href="#"  class="about_center_div_inside_left_a">关于道诚</a>
+							<li class="about_join_center_div_inside_left_li">
+								<div class="about_join_center_div_inside_left_li_div" id="about_join_center_div_inside_left_li_div_about_join">
+								<a href="#"  class="about_join_center_div_inside_left_a">关于道诚</a>
 								</div>
-								<ul class="about_center_div_inside_left_ul_item" id="about_center_div_inside_left_ul_item_about">
-									<li class="about_center_div_inside_left_li_item"><a href="http://localhost:8080/DaoChengWeb/about_join.html" class="about_center_div_inside_left_li_item_a">加入道诚</a>
+								<ul class="about_join_center_div_inside_left_ul_item" id="about_join_center_div_inside_left_ul_item_about_join">
+									<li class="about_join_center_div_inside_left_li_item"><a href="http://localhost:8080/DaoChengWeb/about_join.html" class="about_join_center_div_inside_left_li_item_a">加入道诚</a>
 									</li>
-									<li class="about_center_div_inside_left_li_item"><a href="http://localhost:8080/DaoChengWeb/about.html" class="about_center_div_inside_left_li_item_a">关于道诚</a>
+									<li class="about_join_center_div_inside_left_li_item"><a href="http://localhost:8080/DaoChengWeb/about.html" class="about_join_center_div_inside_left_li_item_a">关于道诚</a>
 									</li>
 								</ul>
 							</li>
 						</ul>
 					</div>
 				</div>
-				<div id="about_center_div_inside_right">
-					<div id="about_center_div_inside_right_div">
-							<div id="about_center_div_inside_right_div_title">
-									<div id="about_center_div_inside_right_div_title_h2">
-										<h2>关于道诚</h2>
+				<div id="about_join_center_div_inside_right">
+					<div id="about_join_center_div_inside_right_div">
+							<div id="about_join_center_div_inside_right_div_title">
+									<div id="about_join_center_div_inside_right_div_title_h2">
+										<h2>加入道诚</h2>
 									</div>
-									<div id="about_center_div_inside_right_div_title_h5">
-										<h5>DaoCheng About</h5>
+									<div id="about_join_center_div_inside_right_div_title_h5">
+										<h5>DaoCheng join</h5>
 									</div>
 							</div>
-							<div id="about_center_div_inside_right_div_content">
-								<p id="about_center_div_inside_right_div_content_p">
-									成都道诚资产管理有限公司“立足于四川省工商联石材商会”本着以客户客户为主，服务至上。贷款业务手续简便快捷，贷款机制灵活，抵、质押范围宽，快速解决“三农”、微型企业和中小企业生产经营过程中小额、临时性资金需求，为客户提供优质高效的服务。公司深知服务是我们生存的基础，创新是我们发展的根本。公司不断吸取行业经验，同时结合自身行业特征与市场现状，积极调整企业的经营战略和经营方式，创造出真正满足具有资金需求的企业与个人的制度与流程我们审视自我，放眼全局，不断进取，现公司正步入一个高速发展的阶段，我们希望各类优秀人才加入公司，与我们共发展，将公司打造为行业的标杆企业
+							<div id="about_join_center_div_inside_right_div_content">
+								<p id="about_join_center_div_inside_right_div_content_p">
+									<span>道诚视员工为公司的第一财富。</span>
 									<br><br>
+									对于道诚来说，业务和资金都不是最重要的。业务可以拓展，可以更换，资金可以吸收，可以调整，而人才却是最不可轻易替代的，是我们最宝贵的财富。<br><br>
 									联系电话：028-86650085<br>
+									公司邮箱：admin@daochengamc.com<br>
 									公司地址：成都市锦江区大慈寺路3号朗御大厦1单元29楼3号<br>
 								</p>
-								<div id="about_center_div_inside_right_div_content_div">
+								<div id="about_join_center_div_inside_right_div_content_div">
 								  	<!--百度地图容器-->
   									<div style="width:800px;height:320px;border:#ccc solid 1px;" id="dituContent"></div>
 								</div>
@@ -239,9 +241,9 @@
 <!-- bottom -->
 
 <!-- footer -->
-		<div id="about_bottom_div_foot">
-			<div id="about_bottom_div_foot_context">
-				<div id="about_bottom_div_foot_context_link">
+		<div id="about_join_bottom_div_foot">
+			<div id="about_join_bottom_div_foot_context">
+				<div id="about_join_bottom_div_foot_context_link">
 					<div>
 					<a href="#">关于道诚</a><span>|</span>
 					<a href="#">联系我们</a><span>|</span>
@@ -251,13 +253,13 @@
 					<a href="#">建议与投诉</a>
 					</div>
 				</div>
-				<div id="about_bottom_div_foot_context_copyright">
+				<div id="about_join_bottom_div_foot_context_copyright">
 					<span>Copyright &copy; 2013 daochengamc.com Inc. All Rights Reserved. </span>
 				</div>
-				<div id="about_bottom_div_foot_context_platform">
+				<div id="about_join_bottom_div_foot_context_platform">
 					<span><a href="#">成都道诚资产管理有限公司</a>&nbsp;版权所有</span>
 				</div>
-				<div id="about_bottom_div_foot_context_number">
+				<div id="about_join_bottom_div_foot_context_number">
 					<span><a>京ICP备12000680号-1</a>&nbsp;&nbsp;京公网安备110108008323号</span>
 				</div>
 			</div>
