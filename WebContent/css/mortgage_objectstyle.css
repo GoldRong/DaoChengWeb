@@ -220,7 +220,7 @@ body {
 	background-color: transparent;
 }
 #mortgage_object_center_div_inside_right_div_title_h2{
-	width: 200px;
+	width: 180px;
 	height:80px;
 	float: left;
 	background-color: transparent;
@@ -230,6 +230,7 @@ body {
 	color: #004ea5;
 	background-color: transparent;
 	margin: 0;
+	font-weight:bolder;
 	margin-top: 20px;
 }
 #mortgage_object_center_div_inside_right_div_title_h5{
@@ -239,7 +240,7 @@ body {
 	background-color: transparent;
 }
 #mortgage_object_center_div_inside_right_div_title_h5 h5{
-	font-weight: lighter;
+	font-weight: bolder;
 	background-color: transparent;
 	margin: 0;
 	margin-top: 35px;
@@ -279,7 +280,7 @@ body {
 	height: 260px;
 	background-color: transparent;
 	margin: 0;
-	background-color: yellow;
+	background-color: transparent;
 }
 
 .mortgage_object_center_div_inside_right_div_content_div_content_div{
@@ -300,7 +301,7 @@ body {
 	width: 226px;
 	height: 140px;
 	margin:0 auto;
-	background-color: red;
+	background-color: transparent;
 }
 .mortgage_object_center_div_inside_right_div_content_div_content_div_inside_img a{
 	
