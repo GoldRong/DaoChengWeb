@@ -116,8 +116,9 @@ body {
 }
 #index_center_div {
 	margin: 0 auto;
-	width: auto;
+	width: 100%;
 	height: 420px;
+	background-color: transparent;
 }
 
 #index_center_div_outside {
